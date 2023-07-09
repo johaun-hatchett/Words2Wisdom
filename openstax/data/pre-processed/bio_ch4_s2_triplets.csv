@@ -1,0 +1,155 @@
+subject,relation,object,sentence
+cell,is smallest unit of,living thing,A cell is the smallest unit of a living thing.
+organism,is called,bacteria,"Whether comprised of one cell (like bacteria) or many cells (like a human), we call it an organism."
+organism,is called,human,"Whether comprised of one cell (like bacteria) or many cells (like a human), we call it an organism."
+cells,are building blocks of,organisms,"Thus, cells are the basic building blocks of all organisms."
+cells,form,tissues,Several cells of one kind that interconnect with each other and perform a shared function form tissues.
+tissues,perform,shared function,Several cells of one kind that interconnect with each other and perform a shared function form tissues.
+cells,interconnect with,each other,Several cells of one kind that interconnect with each other and perform a shared function form tissues.
+tissues,combine to form,organ,"These tissues combine to form an organ (your stomach, heart, or brain), and several organs comprise an organ system (such as the digestive system, circulatory system, or nervous system)."
+organ,comprise,organ system,"These tissues combine to form an organ (your stomach, heart, or brain), and several organs comprise an organ system (such as the digestive system, circulatory system, or nervous system)."
+stomach,is an organ of,digestive system,"These tissues combine to form an organ (your stomach, heart, or brain), and several organs comprise an organ system (such as the digestive system, circulatory system, or nervous system)."
+heart,is an organ of,circulatory system,"These tissues combine to form an organ (your stomach, heart, or brain), and several organs comprise an organ system (such as the digestive system, circulatory system, or nervous system)."
+brain,is an organ of,nervous system,"These tissues combine to form an organ (your stomach, heart, or brain), and several organs comprise an organ system (such as the digestive system, circulatory system, or nervous system)."
+systems,form organism,human being,Several systems that function together form an organism (like a human being).
+systems,function together,organism,Several systems that function together form an organism (like a human being).
+cells,have,structure,"Here, we will examine the structure and function of cells."
+cells,perform,function,"Here, we will examine the structure and function of cells."
+structure,determines,function,"Here, we will examine the structure and function of cells."
+animal cells,classified as,eukaryotic cells,"For example, we classify both animal and plant cells as eukaryotic cells; whereas, we classify bacterial cells as prokaryotic."
+plant cells,classified as,eukaryotic cells,"For example, we classify both animal and plant cells as eukaryotic cells; whereas, we classify bacterial cells as prokaryotic."
+bacterial cells,classified as,prokaryotic,"For example, we classify both animal and plant cells as eukaryotic cells; whereas, we classify bacterial cells as prokaryotic."
+biologists,study,cells,"Before discussing the criteria for determining whether a cell is prokaryotic or eukaryotic, we will first examine how biologists study cells."
+cell,has type,prokaryotic,"Before discussing the criteria for determining whether a cell is prokaryotic or eukaryotic, we will first examine how biologists study cells."
+cell,has type,eukaryotic,"Before discussing the criteria for determining whether a cell is prokaryotic or eukaryotic, we will first examine how biologists study cells."
+Cells,vary in size,,Cells vary in size.
+scientists,use,microscopes,"With few exceptions, we cannot see individual cells with the naked eye, so scientists use microscopes (micro- = ""small""; -scope = ""to look at"") to study them."
+microscopes,study,cells,"With few exceptions, we cannot see individual cells with the naked eye, so scientists use microscopes (micro- = ""small""; -scope = ""to look at"") to study them."
+microscope,is instrument for magnifying,object,A microscope is an instrument that magnifies an object.
+we,photograph with,microscope,"We photograph most cells with a microscope, so we can call these images micrographs."
+we,call,micrographs,"We photograph most cells with a microscope, so we can call these images micrographs."
+microscope,has lenses,lenses,The optics of a microscope's lenses change the image orientation that the user sees.
+lenses,change image orientation of,user,The optics of a microscope's lenses change the image orientation that the user sees.
+specimen,is placed on,microscope slide,"A specimen that is right-side up and facing right on the microscope slide will appear upside-down and facing left when one views through a microscope, and vice versa."
+one,views through,microscope,"A specimen that is right-side up and facing right on the microscope slide will appear upside-down and facing left when one views through a microscope, and vice versa."
+microscope,flips image of,specimen,"A specimen that is right-side up and facing right on the microscope slide will appear upside-down and facing left when one views through a microscope, and vice versa."
+one,moves slide left while looking through,microscope,"Similarly, if one moves the slide left while looking through the microscope, it will appear to move right, and if one moves it down, it will seem to move up."
+microscope,seems to move up when one moves slide down,one,"Similarly, if one moves the slide left while looking through the microscope, it will appear to move right, and if one moves it down, it will seem to move up."
+one,moves slide down while looking through,microscope,"Similarly, if one moves the slide left while looking through the microscope, it will appear to move right, and if one moves it down, it will seem to move up."
+microscope,appears to move right when one moves slide left,one,"Similarly, if one moves the slide left while looking through the microscope, it will appear to move right, and if one moves it down, it will seem to move up."
+microscopes,use lenses to magnify,image,This occurs because microscopes use two sets of lenses to magnify the image.
+two lens system,produces,inverted image,"Because of the manner by which light travels through the lenses, this two lens system produces an inverted image (binocular, or dissecting microscopes, work in a similar manner, but include an additional magnification system that makes the final image appear to be upright)."
+binocular microscopes,work in a similar manner as two lens system,include additional magnification system,"Because of the manner by which light travels through the lenses, this two lens system produces an inverted image (binocular, or dissecting microscopes, work in a similar manner, but include an additional magnification system that makes the final image appear to be upright)."
+additional magnification system,makes,final image appear to be upright,"Because of the manner by which light travels through the lenses, this two lens system produces an inverted image (binocular, or dissecting microscopes, work in a similar manner, but include an additional magnification system that makes the final image appear to be upright)."
+human,has characteristic,red blood cell,"To give you a sense of cell size, a typical human red blood cell is about eight millionths of a meter or eight micrometers (abbreviated as eight μm) in diameter."
+red blood cell,has size,eight micrometers,"To give you a sense of cell size, a typical human red blood cell is about eight millionths of a meter or eight micrometers (abbreviated as eight μm) in diameter."
+eight micrometers,is abbreviated as,eight μm,"To give you a sense of cell size, a typical human red blood cell is about eight millionths of a meter or eight micrometers (abbreviated as eight μm) in diameter."
+eight μm,is a unit of,length,"To give you a sense of cell size, a typical human red blood cell is about eight millionths of a meter or eight micrometers (abbreviated as eight μm) in diameter."
+meter,is a unit of,length,"To give you a sense of cell size, a typical human red blood cell is about eight millionths of a meter or eight micrometers (abbreviated as eight μm) in diameter."
+pin head,has diameter,two thousandths of a meter,A pin head is about two thousandths of a meter (two mm) in diameter.
+pin head,has diameter,two mm,A pin head is about two thousandths of a meter (two mm) in diameter.
+red blood cells,can fit on,pinhead,That means about 250 red blood cells could fit on a pinhead.
+student microscopes,are,light microscopes,Most student microscopes are light microscopes (Figure 4.2a).
+student microscopes,have,Figure 4.2a,Most student microscopes are light microscopes (Figure 4.2a).
+Visible light,passes through,lens system,Visible light passes and bends through the lens system to enable the user to see the specimen.
+Visible light,bends through,lens system,Visible light passes and bends through the lens system to enable the user to see the specimen.
+user,sees,specimen,Visible light passes and bends through the lens system to enable the user to see the specimen.
+Light microscopes,are advantageous for,viewing living organisms,"Light microscopes are advantageous for viewing living organisms, but since individual cells are generally transparent, their components are not distinguishable unless they are colored with special stains."
+individual cells,are generally,transparent,"Light microscopes are advantageous for viewing living organisms, but since individual cells are generally transparent, their components are not distinguishable unless they are colored with special stains."
+components of cells,are not distinguishable unless,colored with special stains,"Light microscopes are advantageous for viewing living organisms, but since individual cells are generally transparent, their components are not distinguishable unless they are colored with special stains."
+Staining,kills,cells,"Staining, however, usually kills the cells."
+Light microscopes,magnify up to,approximately 400 times,Light microscopes that undergraduates commonly use in the laboratory magnify up to approximately 400 times.
+undergraduates,use in,laboratory,Light microscopes that undergraduates commonly use in the laboratory magnify up to approximately 400 times.
+microscopy,has parameter,magnification,Two parameters that are important in microscopy are magnification and resolving power.
+microscopy,has parameter,resolving power,Two parameters that are important in microscopy are magnification and resolving power.
+Magnification,is process of enlarging,object in appearance,Magnification is the process of enlarging an object in appearance.
+microscope,has resolving power,ability to distinguish two adjacent structures as separate,"Resolving power is the microscope's ability to distinguish two adjacent structures as separate: the higher the resolution, the better the image's clarity and detail."
+resolving power,affects image clarity,better resolution,"Resolving power is the microscope's ability to distinguish two adjacent structures as separate: the higher the resolution, the better the image's clarity and detail."
+oil immersion lenses,used to study,small objects,"When one uses oil immersion lenses to study small objects, magnification usually increases to 1,000 times."
+magnification,increases to,"1,000 times","When one uses oil immersion lenses to study small objects, magnification usually increases to 1,000 times."
+scientists,use,electron microscopes,"In order to gain a better understanding of cellular structure and function, scientists typically use electron microscopes."
+electron microscopes,help,gain understanding of cellular structure,"In order to gain a better understanding of cellular structure and function, scientists typically use electron microscopes."
+electron microscopes,help,gain understanding of cellular function,"In order to gain a better understanding of cellular structure and function, scientists typically use electron microscopes."
+light microscopes,have,resolution,a) Most light microscopes in a college biology lab can magnify cells up to approximately 400 times and have a resolution of about 200 nanometers.
+light microscopes,magnify,cells,a) Most light microscopes in a college biology lab can magnify cells up to approximately 400 times and have a resolution of about 200 nanometers.
+light microscopes,in,college biology lab,a) Most light microscopes in a college biology lab can magnify cells up to approximately 400 times and have a resolution of about 200 nanometers.
+cells,can be magnified up to,approximately 400 times,a) Most light microscopes in a college biology lab can magnify cells up to approximately 400 times and have a resolution of about 200 nanometers.
+resolution,is about,200 nanometers,a) Most light microscopes in a college biology lab can magnify cells up to approximately 400 times and have a resolution of about 200 nanometers.
+Electron microscopes,provide,higher magnification,"b) Electron microscopes provide a much higher magnification, 100,000x, and a have a resolution of 50 picometers."
+Electron microscopes,have,resolution of 50 picometers,"b) Electron microscopes provide a much higher magnification, 100,000x, and a have a resolution of 50 picometers."
+beam of electrons,is used instead of,beam of light,use a beam of electrons instead of a beam of light.
+higher magnification,allows for,more detail,"Not only does this allow for higher magnification and, thus, more detail (Figure 4.3), it also provides higher resolving power."
+it,provides,higher resolving power,"Not only does this allow for higher magnification and, thus, more detail (Figure 4.3), it also provides higher resolving power."
+specimen,is prepared for viewing with,electron microscope,The method to prepare the specimen for viewing with an electron microscope kills the specimen.
+electron microscope,kills,specimen,The method to prepare the specimen for viewing with an electron microscope kills the specimen.
+electrons,have wavelengths,shorter than photons,"Electrons have short wavelengths (shorter than photons) that move best in a vacuum, so we cannot view living cells with an electron microscope."
+electrons,move best in,vacuum,"Electrons have short wavelengths (shorter than photons) that move best in a vacuum, so we cannot view living cells with an electron microscope."
+we,cannot view,living cells with an electron microscope,"Electrons have short wavelengths (shorter than photons) that move best in a vacuum, so we cannot view living cells with an electron microscope."
+scanning electron microscope,moves across,cell's surface,"In a scanning electron microscope, a beam of electrons moves back and forth across a cell's surface, creating details of cell surface characteristics."
+beam of electrons,moves back and forth across,cell's surface,"In a scanning electron microscope, a beam of electrons moves back and forth across a cell's surface, creating details of cell surface characteristics."
+beam of electrons,creates details of,cell surface characteristics,"In a scanning electron microscope, a beam of electrons moves back and forth across a cell's surface, creating details of cell surface characteristics."
+transmission electron microscope,penetrates,cell,"In a transmission electron microscope, the electron beam penetrates the cell and provides details of a cell's internal structures."
+electron beam,provides details of,internal structures of cell,"In a transmission electron microscope, the electron beam penetrates the cell and provides details of a cell's internal structures."
+electron microscopes,are significantly more bulky and expensive than,light microscopes,"As you might imagine, electron microscopes are significantly more bulky and expensive than light microscopes."
+Salmonella bacteria,appear as,tiny purple dots,a) These Salmonella bacteria appear as tiny purple dots when viewed with a light microscope.
+viewed with,light microscope,Salmonella bacteria,a) These Salmonella bacteria appear as tiny purple dots when viewed with a light microscope.
+Salmonella,invading,human cells,b) This scanning electron microscope micrograph shows Salmonella bacteria (in red) invading human cells (yellow).
+subfigure (b),shows,Salmonella specimen,"Even though subfigure (b) shows a different Salmonella specimen than subfigure (a), you can still observe the comparative increase in magnification and detail."
+subfigure (a),shows,Salmonella specimen,"Even though subfigure (b) shows a different Salmonella specimen than subfigure (a), you can still observe the comparative increase in magnification and detail."
+Salmonella specimen,is different than,Salmonella specimen in subfigure (a),"Even though subfigure (b) shows a different Salmonella specimen than subfigure (a), you can still observe the comparative increase in magnification and detail."
+magnification and detail,increases comparatively in,subfigure (b),"Even though subfigure (b) shows a different Salmonella specimen than subfigure (a), you can still observe the comparative increase in magnification and detail."
+HowBig,is related to,cell size,"For another perspective on cell size, try the HowBig interactive at this site."
+microscopes,are far more complex than,those that Dutch shopkeeper Antony van Leeuwenhoek used in the 1600s,"The microscopes we use today are far more complex than those that Dutch shopkeeper Antony van Leeuwenhoek, used in the 1600s."
+Antony van Leeuwenhoek,used,microscopes in the 1600s,"The microscopes we use today are far more complex than those that Dutch shopkeeper Antony van Leeuwenhoek, used in the 1600s."
+van Leeuwenhoek,skilled in,crafting lenses,"Skilled in crafting lenses, van Leeuwenhoek observed the movements of single-celled organisms, which he collectively termed ""animalcules."""
+van Leeuwenhoek,observed,movements of single-celled organisms,"Skilled in crafting lenses, van Leeuwenhoek observed the movements of single-celled organisms, which he collectively termed ""animalcules."""
+van Leeuwenhoek,termed,animalcules,"Skilled in crafting lenses, van Leeuwenhoek observed the movements of single-celled organisms, which he collectively termed ""animalcules."""
+Robert Hooke,coined term,cell,"In the 1665 publication Micrographia, experimental scientist Robert Hooke coined the term ""cell"" for the box-like structures he observed when viewing cork tissue through a lens."
+Robert Hooke,published,Micrographia,"In the 1665 publication Micrographia, experimental scientist Robert Hooke coined the term ""cell"" for the box-like structures he observed when viewing cork tissue through a lens."
+van Leeuwenhoek,discovered,bacteria,"In the 1670s, van Leeuwenhoek discovered bacteria and protozoa."
+van Leeuwenhoek,discovered,protozoa,"In the 1670s, van Leeuwenhoek discovered bacteria and protozoa."
+scientists,used,microscope construction,"Later advances in lenses, microscope construction, and staining techniques enabled other scientists to see some components inside cells."
+scientists,used,staining techniques,"Later advances in lenses, microscope construction, and staining techniques enabled other scientists to see some components inside cells."
+microscope construction,enabled,scientists to see components inside cells,"Later advances in lenses, microscope construction, and staining techniques enabled other scientists to see some components inside cells."
+staining techniques,enabled,scientists to see components inside cells,"Later advances in lenses, microscope construction, and staining techniques enabled other scientists to see some components inside cells."
+Matthias Schleiden,studied,tissues,"By the late 1830s, botanist Matthias Schleiden and zoologist Theodor Schwann were studying tissues and proposed the unified cell theory, which states that one or more cells comprise all living things, the cell is the basic unit of life, and new cells arise from existing cells."
+Theodor Schwann,studied,tissues,"By the late 1830s, botanist Matthias Schleiden and zoologist Theodor Schwann were studying tissues and proposed the unified cell theory, which states that one or more cells comprise all living things, the cell is the basic unit of life, and new cells arise from existing cells."
+Matthias Schleiden,proposed,unified cell theory,"By the late 1830s, botanist Matthias Schleiden and zoologist Theodor Schwann were studying tissues and proposed the unified cell theory, which states that one or more cells comprise all living things, the cell is the basic unit of life, and new cells arise from existing cells."
+Theodor Schwann,proposed,unified cell theory,"By the late 1830s, botanist Matthias Schleiden and zoologist Theodor Schwann were studying tissues and proposed the unified cell theory, which states that one or more cells comprise all living things, the cell is the basic unit of life, and new cells arise from existing cells."
+unified cell theory,states,one or more cells comprise all living things,"By the late 1830s, botanist Matthias Schleiden and zoologist Theodor Schwann were studying tissues and proposed the unified cell theory, which states that one or more cells comprise all living things, the cell is the basic unit of life, and new cells arise from existing cells."
+unified cell theory,states,the cell is the basic unit of life,"By the late 1830s, botanist Matthias Schleiden and zoologist Theodor Schwann were studying tissues and proposed the unified cell theory, which states that one or more cells comprise all living things, the cell is the basic unit of life, and new cells arise from existing cells."
+unified cell theory,states,new cells arise from existing cells,"By the late 1830s, botanist Matthias Schleiden and zoologist Theodor Schwann were studying tissues and proposed the unified cell theory, which states that one or more cells comprise all living things, the cell is the basic unit of life, and new cells arise from existing cells."
+Rudolf Virchow,contributed to,theory,Rudolf Virchow later made important contributions to this theory.
+Pap smear,is a type of,medical test,Have you ever heard of a medical test called a Pap smear (Figure 4.4)?
+doctor,takes sample of cells from,patient's uterine cervix,"In this test, a doctor takes a small sample of cells from the patient's uterine cervix and sends it to a medical lab where a cytotechnologist stains the cells and examines them for any changes that could indicate cervical cancer or a microbial infection."
+cytotechnologist,examines,cells for changes,"In this test, a doctor takes a small sample of cells from the patient's uterine cervix and sends it to a medical lab where a cytotechnologist stains the cells and examines them for any changes that could indicate cervical cancer or a microbial infection."
+cells,are stained by,cytotechnologist,"In this test, a doctor takes a small sample of cells from the patient's uterine cervix and sends it to a medical lab where a cytotechnologist stains the cells and examines them for any changes that could indicate cervical cancer or a microbial infection."
+cytotechnologist,works at,medical lab,"In this test, a doctor takes a small sample of cells from the patient's uterine cervix and sends it to a medical lab where a cytotechnologist stains the cells and examines them for any changes that could indicate cervical cancer or a microbial infection."
+changes in cells,could indicate,cervical cancer,"In this test, a doctor takes a small sample of cells from the patient's uterine cervix and sends it to a medical lab where a cytotechnologist stains the cells and examines them for any changes that could indicate cervical cancer or a microbial infection."
+changes in cells,could indicate,microbial infection,"In this test, a doctor takes a small sample of cells from the patient's uterine cervix and sends it to a medical lab where a cytotechnologist stains the cells and examines them for any changes that could indicate cervical cancer or a microbial infection."
+Cytotechnologists,study,cells,"Cytotechnologists (cyto- = ""cell"") are professionals who study cells via microscopic examinations and other laboratory tests."
+Cytotechnologists,perform,microscopic examinations,"Cytotechnologists (cyto- = ""cell"") are professionals who study cells via microscopic examinations and other laboratory tests."
+Cytotechnologists,perform,laboratory tests,"Cytotechnologists (cyto- = ""cell"") are professionals who study cells via microscopic examinations and other laboratory tests."
+They,are trained to determine,which cellular changes are within normal limits and which are abnormal.,They are trained to determine which cellular changes are within normal limits and which are abnormal.
+focus,is not limited to,cervical cells,Their focus is not limited to cervical cells.
+They,study,cellular specimens,They study cellular specimens that come from all organs.
+cellular specimens,come from,all organs,They study cellular specimens that come from all organs.
+abnormalities,noticed by,they,"When they notice abnormalities, they consult a pathologist, a medical doctor who interprets and diagnoses changes that disease in body tissue and fluids cause."
+they,consult,pathologist,"When they notice abnormalities, they consult a pathologist, a medical doctor who interprets and diagnoses changes that disease in body tissue and fluids cause."
+pathologist,interprets and diagnoses,changes that disease in body tissue and fluids cause,"When they notice abnormalities, they consult a pathologist, a medical doctor who interprets and diagnoses changes that disease in body tissue and fluids cause."
+pathologist,is a,medical doctor,"When they notice abnormalities, they consult a pathologist, a medical doctor who interprets and diagnoses changes that disease in body tissue and fluids cause."
+Cytotechnologists,play a vital role in,saving people's lives,Cytotechnologists play a vital role in saving people's lives.
+doctors,discover,abnormalities,"When doctors discover abnormalities early, a patient's treatment can begin sooner, which usually increases the chances of a successful outcome."
+abnormalities,lead to,early treatment,"When doctors discover abnormalities early, a patient's treatment can begin sooner, which usually increases the chances of a successful outcome."
+patient,receive,treatment,"When doctors discover abnormalities early, a patient's treatment can begin sooner, which usually increases the chances of a successful outcome."
+treatment,increase chances of,successful outcome,"When doctors discover abnormalities early, a patient's treatment can begin sooner, which usually increases the chances of a successful outcome."
+uterine cervix cells,are from,Pap smear,"These uterine cervix cells, viewed through a light microscope, are from a Pap smear."
+Pap smear,viewed through,light microscope,"These uterine cervix cells, viewed through a light microscope, are from a Pap smear."
+Normal cells,are on the left,,Normal cells are on the left.
+cells,infected with,human papillomavirus,The cells on the right are infected with human papillomavirus (HPV).
+human papillomavirus,causes,infection,The cells on the right are infected with human papillomavirus (HPV).
+infected cells,are larger,,Notice that the infected cells are larger.
+cells,have nuclei,two,"Also, two of these cells each have two nuclei instead of one, the normal number."
+cells,have nuclei,one,"Also, two of these cells each have two nuclei instead of one, the normal number."
+cells,have,two nuclei,"Also, two of these cells each have two nuclei instead of one, the normal number."
+nuclei,are in,cells,"Also, two of these cells each have two nuclei instead of one, the normal number."

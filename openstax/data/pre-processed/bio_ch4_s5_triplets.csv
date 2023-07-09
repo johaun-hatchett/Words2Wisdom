@@ -1,0 +1,231 @@
+subject,relation,object,sentence
+endomembrane system,is a group of,membranes and organelles,"The endomembrane system (endo = ""within"") is a group of membranes and organelles (Figure 4.18) in eukaryotic cells that works together to modify, package, and transport lipids and proteins."
+endomembrane system,works together to,"modify, package, and transport lipids and proteins","The endomembrane system (endo = ""within"") is a group of membranes and organelles (Figure 4.18) in eukaryotic cells that works together to modify, package, and transport lipids and proteins."
+membranes and organelles,are in,eukaryotic cells,"The endomembrane system (endo = ""within"") is a group of membranes and organelles (Figure 4.18) in eukaryotic cells that works together to modify, package, and transport lipids and proteins."
+Figure 4.18,shows,membranes and organelles,"The endomembrane system (endo = ""within"") is a group of membranes and organelles (Figure 4.18) in eukaryotic cells that works together to modify, package, and transport lipids and proteins."
+lipids,"are modified, packaged, and transported by",endomembrane system,"The endomembrane system (endo = ""within"") is a group of membranes and organelles (Figure 4.18) in eukaryotic cells that works together to modify, package, and transport lipids and proteins."
+proteins,"are modified, packaged, and transported by",endomembrane system,"The endomembrane system (endo = ""within"") is a group of membranes and organelles (Figure 4.18) in eukaryotic cells that works together to modify, package, and transport lipids and proteins."
+nuclear envelope,part of,cell,"It includes the nuclear envelope, lysosomes, and vesicles, which we have already mentioned, and the endoplasmic reticulum and Golgi apparatus, which we will cover shortly."
+lysosomes,part of,cell,"It includes the nuclear envelope, lysosomes, and vesicles, which we have already mentioned, and the endoplasmic reticulum and Golgi apparatus, which we will cover shortly."
+vesicles,part of,cell,"It includes the nuclear envelope, lysosomes, and vesicles, which we have already mentioned, and the endoplasmic reticulum and Golgi apparatus, which we will cover shortly."
+endoplasmic reticulum,part of,cell,"It includes the nuclear envelope, lysosomes, and vesicles, which we have already mentioned, and the endoplasmic reticulum and Golgi apparatus, which we will cover shortly."
+Golgi apparatus,part of,cell,"It includes the nuclear envelope, lysosomes, and vesicles, which we have already mentioned, and the endoplasmic reticulum and Golgi apparatus, which we will cover shortly."
+plasma membrane,part of,endomembrane system,"Although not technically within the cell, the plasma membrane is included in the endomembrane system because, as you will see, it interacts with the other endomembranous organelles."
+endomembrane system,interacts with,plasma membrane,"Although not technically within the cell, the plasma membrane is included in the endomembrane system because, as you will see, it interacts with the other endomembranous organelles."
+endomembrane system,does not include,mitochondria,The endomembrane system does not include either mitochondria or chloroplast membranes.
+endomembrane system,does not include,chloroplast membranes,The endomembrane system does not include either mitochondria or chloroplast membranes.
+membrane proteins,synthesized in,rough endoplasmic reticulum,Membrane and secretory proteins are synthesized in the rough endoplasmic reticulum (RER).
+secretory proteins,synthesized in,rough endoplasmic reticulum,Membrane and secretory proteins are synthesized in the rough endoplasmic reticulum (RER).
+RER,modifies,proteins,The RER also sometimes modifies proteins.
+carbohydrate,modifies,integral membrane protein,"In this illustration, an attachment of a (purple) carbohydrate modifies a (green) integral membrane protein in the ER."
+integral membrane protein,is modified by,carbohydrate,"In this illustration, an attachment of a (purple) carbohydrate modifies a (green) integral membrane protein in the ER."
+integral membrane protein,is located in,ER,"In this illustration, an attachment of a (purple) carbohydrate modifies a (green) integral membrane protein in the ER."
+Vesicles,bud from,ER,Vesicles with the integral protein bud from the ER and fuse with the Golgi apparatus' cis face.
+Vesicles,fuse with,Golgi apparatus' cis face,Vesicles with the integral protein bud from the ER and fuse with the Golgi apparatus' cis face.
+protein,passes along,Golgi's cisternae,"As the protein passes along the Golgi's cisternae, the addition of more carbohydrates further modifies it."
+Golgi's cisternae,modifies,protein,"As the protein passes along the Golgi's cisternae, the addition of more carbohydrates further modifies it."
+carbohydrates,further modifies,protein,"As the protein passes along the Golgi's cisternae, the addition of more carbohydrates further modifies it."
+Golgi,is the origin of,vesicle,"After its synthesis is complete, it exits as an integral membrane protein of the vesicle that buds from the Golgi's trans If a peripheral membrane protein were synthesized in the lumen (inside) of the ER, would it end up on the inside or outside of the plasma membrane?"
+vesicle,contains,integral membrane protein,"After its synthesis is complete, it exits as an integral membrane protein of the vesicle that buds from the Golgi's trans If a peripheral membrane protein were synthesized in the lumen (inside) of the ER, would it end up on the inside or outside of the plasma membrane?"
+ER,is the location of,synthesis,"After its synthesis is complete, it exits as an integral membrane protein of the vesicle that buds from the Golgi's trans If a peripheral membrane protein were synthesized in the lumen (inside) of the ER, would it end up on the inside or outside of the plasma membrane?"
+peripheral membrane protein,is synthesized in,ER,"After its synthesis is complete, it exits as an integral membrane protein of the vesicle that buds from the Golgi's trans If a peripheral membrane protein were synthesized in the lumen (inside) of the ER, would it end up on the inside or outside of the plasma membrane?"
+plasma membrane,has protein on,outside,"After its synthesis is complete, it exits as an integral membrane protein of the vesicle that buds from the Golgi's trans If a peripheral membrane protein were synthesized in the lumen (inside) of the ER, would it end up on the inside or outside of the plasma membrane?"
+endoplasmic reticulum,is a series of,interconnected membranous sacs and tubules,The endoplasmic reticulum (ER) (Figure 4.18) is a series of interconnected membranous sacs and tubules that collectively modifies proteins and synthesizes lipids.
+endoplasmic reticulum,modifies,proteins,The endoplasmic reticulum (ER) (Figure 4.18) is a series of interconnected membranous sacs and tubules that collectively modifies proteins and synthesizes lipids.
+endoplasmic reticulum,synthesizes,lipids,The endoplasmic reticulum (ER) (Figure 4.18) is a series of interconnected membranous sacs and tubules that collectively modifies proteins and synthesizes lipids.
+ER,has function in,rough ER,"However, these two functions take place in separate areas of the ER: the rough ER and the smooth ER, respectively."
+rough ER,is located in,separate area of ER,"However, these two functions take place in separate areas of the ER: the rough ER and the smooth ER, respectively."
+smooth ER,has function in,lipid synthesis,"However, these two functions take place in separate areas of the ER: the rough ER and the smooth ER, respectively."
+ER tubules,has,hollow portion,We call the ER tubules' hollow portion the lumen or cisternal space.
+hollow portion,is called,lumen,We call the ER tubules' hollow portion the lumen or cisternal space.
+hollow portion,is called,cisternal space,We call the ER tubules' hollow portion the lumen or cisternal space.
+ER,is continuous with,nuclear envelope,"The ER's membrane, which is a phospholipid bilayer embedded with proteins, is continuous with the nuclear envelope."
+ER's membrane,is embedded with,proteins,"The ER's membrane, which is a phospholipid bilayer embedded with proteins, is continuous with the nuclear envelope."
+Scientists,named as,rough endoplasmic reticulum,Scientists have named the rough endoplasmic reticulum (RER) as such because the ribosomes attached to its cytoplasmic surface give it a studded appearance when viewing it through an electron microscope (Figure 4.19).
+ribosomes,attached to,cytoplasmic surface,Scientists have named the rough endoplasmic reticulum (RER) as such because the ribosomes attached to its cytoplasmic surface give it a studded appearance when viewing it through an electron microscope (Figure 4.19).
+rough endoplasmic reticulum,has,ribosomes,Scientists have named the rough endoplasmic reticulum (RER) as such because the ribosomes attached to its cytoplasmic surface give it a studded appearance when viewing it through an electron microscope (Figure 4.19).
+rough endoplasmic reticulum,has,studded appearance,Scientists have named the rough endoplasmic reticulum (RER) as such because the ribosomes attached to its cytoplasmic surface give it a studded appearance when viewing it through an electron microscope (Figure 4.19).
+viewing,through,electron microscope,Scientists have named the rough endoplasmic reticulum (RER) as such because the ribosomes attached to its cytoplasmic surface give it a studded appearance when viewing it through an electron microscope (Figure 4.19).
+rough endoplasmic reticulum,viewed through,electron microscope,Scientists have named the rough endoplasmic reticulum (RER) as such because the ribosomes attached to its cytoplasmic surface give it a studded appearance when viewing it through an electron microscope (Figure 4.19).
+Figure 4.19,shows,rough endoplasmic reticulum,Scientists have named the rough endoplasmic reticulum (RER) as such because the ribosomes attached to its cytoplasmic surface give it a studded appearance when viewing it through an electron microscope (Figure 4.19).
+transmission electron micrograph,shows,rough endoplasmic reticulum,This transmission electron micrograph shows the rough endoplasmic reticulum and other organelles in a pancreatic cell.
+transmission electron micrograph,shows,organelles,This transmission electron micrograph shows the rough endoplasmic reticulum and other organelles in a pancreatic cell.
+pancreatic cell,contains,rough endoplasmic reticulum,This transmission electron micrograph shows the rough endoplasmic reticulum and other organelles in a pancreatic cell.
+pancreatic cell,contains,organelles,This transmission electron micrograph shows the rough endoplasmic reticulum and other organelles in a pancreatic cell.
+Ribosomes,synthesize proteins,newly synthesized proteins,"Ribosomes transfer their newly synthesized proteins into the RER's lumen where they undergo structural modifications, such as folding or acquiring side chains."
+Ribosomes,transfer proteins,the RER's lumen,"Ribosomes transfer their newly synthesized proteins into the RER's lumen where they undergo structural modifications, such as folding or acquiring side chains."
+proteins,undergo modifications,structural modifications,"Ribosomes transfer their newly synthesized proteins into the RER's lumen where they undergo structural modifications, such as folding or acquiring side chains."
+proteins,undergo modifications,folding,"Ribosomes transfer their newly synthesized proteins into the RER's lumen where they undergo structural modifications, such as folding or acquiring side chains."
+proteins,undergo modifications,acquiring side chains,"Ribosomes transfer their newly synthesized proteins into the RER's lumen where they undergo structural modifications, such as folding or acquiring side chains."
+RER,contains lumen,newly synthesized proteins,"Ribosomes transfer their newly synthesized proteins into the RER's lumen where they undergo structural modifications, such as folding or acquiring side chains."
+modified proteins,incorporate into,cellular membranes,These modified proteins incorporate into cellular membranes—the ER or the ER's or other organelles' membranes.
+cellular membranes,located in,ER,These modified proteins incorporate into cellular membranes—the ER or the ER's or other organelles' membranes.
+ER,located in,organelles' membranes,These modified proteins incorporate into cellular membranes—the ER or the ER's or other organelles' membranes.
+proteins,secrete from,cell,"The proteins can also secrete from the cell (such as protein hormones, enzymes)."
+proteins,secrete protein hormones,from cell,"The proteins can also secrete from the cell (such as protein hormones, enzymes)."
+proteins,secrete enzymes,from cell,"The proteins can also secrete from the cell (such as protein hormones, enzymes)."
+RER,makes,phospholipids,The RER also makes phospholipids for cellular membranes.
+phospholipids,are for,cellular membranes,The RER also makes phospholipids for cellular membranes.
+phospholipids,destined to stay in,the RER,"If the phospholipids or modified proteins are not destined to stay in the RER, they will reach their destinations via transport vesicles that bud from the RER's membrane (Figure 4.18)."
+modified proteins,destined to stay in,the RER,"If the phospholipids or modified proteins are not destined to stay in the RER, they will reach their destinations via transport vesicles that bud from the RER's membrane (Figure 4.18)."
+transport vesicles,bud from,the RER's membrane,"If the phospholipids or modified proteins are not destined to stay in the RER, they will reach their destinations via transport vesicles that bud from the RER's membrane (Figure 4.18)."
+transport vesicles,reach,destinations,"If the phospholipids or modified proteins are not destined to stay in the RER, they will reach their destinations via transport vesicles that bud from the RER's membrane (Figure 4.18)."
+Figure 4.18,depicts,transport vesicles,"If the phospholipids or modified proteins are not destined to stay in the RER, they will reach their destinations via transport vesicles that bud from the RER's membrane (Figure 4.18)."
+RER,modifies,proteins,"Since the RER is engaged in modifying proteins (such as enzymes, for example) that secrete from the cell, you would be correct in assuming that the RER is abundant in cells that secrete proteins."
+proteins,secreted by,cell,"Since the RER is engaged in modifying proteins (such as enzymes, for example) that secrete from the cell, you would be correct in assuming that the RER is abundant in cells that secrete proteins."
+enzymes,are proteins,modified by RER,"Since the RER is engaged in modifying proteins (such as enzymes, for example) that secrete from the cell, you would be correct in assuming that the RER is abundant in cells that secrete proteins."
+liver cells,are example of,cells,"This is the case with liver cells, for example."
+smooth endoplasmic reticulum,is continuous with, RER,The smooth endoplasmic reticulum (SER) is continuous with the RER but has few or no ribosomes on its cytoplasmic surface (Figure 4.18).
+smooth endoplasmic reticulum,has few or no,ribosomes,The smooth endoplasmic reticulum (SER) is continuous with the RER but has few or no ribosomes on its cytoplasmic surface (Figure 4.18).
+smooth endoplasmic reticulum,has,cytoplasmic surface,The smooth endoplasmic reticulum (SER) is continuous with the RER but has few or no ribosomes on its cytoplasmic surface (Figure 4.18).
+smooth endoplasmic reticulum,is shown in,Figure 4.18,The smooth endoplasmic reticulum (SER) is continuous with the RER but has few or no ribosomes on its cytoplasmic surface (Figure 4.18).
+SER,synthesize,carbohydrates,"SER functions include synthesis of carbohydrates, lipids, and steroid hormones; detoxification of medications and poisons; and storing calcium ions."
+SER,synthesize,lipids,"SER functions include synthesis of carbohydrates, lipids, and steroid hormones; detoxification of medications and poisons; and storing calcium ions."
+SER,synthesize,steroid hormones,"SER functions include synthesis of carbohydrates, lipids, and steroid hormones; detoxification of medications and poisons; and storing calcium ions."
+SER,detoxify,medications,"SER functions include synthesis of carbohydrates, lipids, and steroid hormones; detoxification of medications and poisons; and storing calcium ions."
+SER,detoxify,poisons,"SER functions include synthesis of carbohydrates, lipids, and steroid hormones; detoxification of medications and poisons; and storing calcium ions."
+SER,store,calcium ions,"SER functions include synthesis of carbohydrates, lipids, and steroid hormones; detoxification of medications and poisons; and storing calcium ions."
+muscle cells,has SER,sarcoplasmic reticulum,"In muscle cells, a specialized SER, the sarcoplasmic reticulum, is responsible for storing calcium ions that are needed to trigger the muscle cells' coordinated contractions."
+sarcoplasmic reticulum,stores,calcium ions,"In muscle cells, a specialized SER, the sarcoplasmic reticulum, is responsible for storing calcium ions that are needed to trigger the muscle cells' coordinated contractions."
+calcium ions,triggers,muscle cells' coordinated contractions,"In muscle cells, a specialized SER, the sarcoplasmic reticulum, is responsible for storing calcium ions that are needed to trigger the muscle cells' coordinated contractions."
+endomembrane system,is a,cellular organelle,You can watch an excellent animation of the endomembrane system here.
+animation,is at the end of,self-assessment,"At the end of the animation, there is a short self-assessment."
+self-assessment,is short,self-assessment,"At the end of the animation, there is a short self-assessment."
+Heart disease,is leading cause of death in,United States,Heart disease is the leading cause of death in the United States.
+sedentary lifestyle,cause,health problems,This is primarily due to our sedentary lifestyle and our high trans-fat diets.
+high trans-fat diets,cause,health problems,This is primarily due to our sedentary lifestyle and our high trans-fat diets.
+Heart failure,is one of,many disabling heart conditions,Heart failure is just one of many disabling heart conditions.
+many disabling heart conditions,include,heart failure,Heart failure is just one of many disabling heart conditions.
+heart failure,does not mean,heart has stopped working,Heart failure does not mean that the heart has stopped working.
+heart,has,stopped working,Heart failure does not mean that the heart has stopped working.
+heart,can't pump with sufficient force to transport,oxygenated blood,"Rather, it means that the heart can't pump with sufficient force to transport oxygenated blood to all the vital organs."
+heart,can't pump with sufficient force to transport,vital organs,"Rather, it means that the heart can't pump with sufficient force to transport oxygenated blood to all the vital organs."
+heart failure,can lead to,kidney failure,"Left untreated, heart failure can lead to kidney failure and other organ failure."
+heart failure,can lead to,organ failure,"Left untreated, heart failure can lead to kidney failure and other organ failure."
+Cardiac muscle tissue,comprises,heart,Cardiac muscle tissue comprises the heart's wall.
+heart failure,occurs when,cardiac muscle cells' endoplasmic reticula do not function properly,Heart failure occurs when cardiac muscle cells' endoplasmic reticula do not function properly.
+cardiac muscle cells,do not function properly,heart failure,Heart failure occurs when cardiac muscle cells' endoplasmic reticula do not function properly.
+endoplasmic reticula,do not function properly,heart failure,Heart failure occurs when cardiac muscle cells' endoplasmic reticula do not function properly.
+calcium ions,trigger,contractile force,"As a result, an insufficient number of calcium ions are available to trigger a sufficient contractile force."
+Cardiologists,specialize in treating,heart diseases,"Cardiologists (cardi- = ""heart""; -ologist = ""one who studies"") are doctors who specialize in treating heart diseases, including heart failure."
+Cardiologists,treat,heart failure,"Cardiologists (cardi- = ""heart""; -ologist = ""one who studies"") are doctors who specialize in treating heart diseases, including heart failure."
+Cardiologists,diagnose,heart failure,"Cardiologists can diagnose heart failure via a physical examination, results from an electrocardiogram (ECG, a test that measures the heart's electrical activity), a chest X-ray to see whether the heart is enlarged, and other tests."
+Cardiologists,perform,physical examination,"Cardiologists can diagnose heart failure via a physical examination, results from an electrocardiogram (ECG, a test that measures the heart's electrical activity), a chest X-ray to see whether the heart is enlarged, and other tests."
+Cardiologists,use,electrocardiogram,"Cardiologists can diagnose heart failure via a physical examination, results from an electrocardiogram (ECG, a test that measures the heart's electrical activity), a chest X-ray to see whether the heart is enlarged, and other tests."
+ECG,measure,heart's electrical activity,"Cardiologists can diagnose heart failure via a physical examination, results from an electrocardiogram (ECG, a test that measures the heart's electrical activity), a chest X-ray to see whether the heart is enlarged, and other tests."
+Cardiologists,use,chest X-ray,"Cardiologists can diagnose heart failure via a physical examination, results from an electrocardiogram (ECG, a test that measures the heart's electrical activity), a chest X-ray to see whether the heart is enlarged, and other tests."
+chest X-ray,see,heart is enlarged,"Cardiologists can diagnose heart failure via a physical examination, results from an electrocardiogram (ECG, a test that measures the heart's electrical activity), a chest X-ray to see whether the heart is enlarged, and other tests."
+other tests,help diagnose,heart failure,"Cardiologists can diagnose heart failure via a physical examination, results from an electrocardiogram (ECG, a test that measures the heart's electrical activity), a chest X-ray to see whether the heart is enlarged, and other tests."
+cardiologist,diagnoses,heart failure,"If the cardiologist diagnoses heart failure, he or she will typically prescribe appropriate medications and recommend a reduced table salt intake and a supervised exercise program."
+cardiologist,prescribes,appropriate medications,"If the cardiologist diagnoses heart failure, he or she will typically prescribe appropriate medications and recommend a reduced table salt intake and a supervised exercise program."
+cardiologist,recommends,reduced table salt intake,"If the cardiologist diagnoses heart failure, he or she will typically prescribe appropriate medications and recommend a reduced table salt intake and a supervised exercise program."
+cardiologist,recommends,supervised exercise program,"If the cardiologist diagnoses heart failure, he or she will typically prescribe appropriate medications and recommend a reduced table salt intake and a supervised exercise program."
+vesicles,transported from,ER,"We have already mentioned that vesicles can bud from the ER and transport their contents elsewhere, but where do the vesicles go?"
+vesicles,contain,contents,"We have already mentioned that vesicles can bud from the ER and transport their contents elsewhere, but where do the vesicles go?"
+lipids,need sorting within,transport vesicles,"Before reaching their final destination, the lipids or proteins within the transport vesicles still need sorting, packaging, and tagging so that they end up in the right place."
+proteins,need sorting within,transport vesicles,"Before reaching their final destination, the lipids or proteins within the transport vesicles still need sorting, packaging, and tagging so that they end up in the right place."
+transport vesicles,need packaging for,lipids,"Before reaching their final destination, the lipids or proteins within the transport vesicles still need sorting, packaging, and tagging so that they end up in the right place."
+transport vesicles,need packaging for,proteins,"Before reaching their final destination, the lipids or proteins within the transport vesicles still need sorting, packaging, and tagging so that they end up in the right place."
+transport vesicles,need tagging for,lipids,"Before reaching their final destination, the lipids or proteins within the transport vesicles still need sorting, packaging, and tagging so that they end up in the right place."
+transport vesicles,need tagging for,proteins,"Before reaching their final destination, the lipids or proteins within the transport vesicles still need sorting, packaging, and tagging so that they end up in the right place."
+transport vesicles,end up in,right place,"Before reaching their final destination, the lipids or proteins within the transport vesicles still need sorting, packaging, and tagging so that they end up in the right place."
+Golgi apparatus,is located in,flattened membranes,"Sorting, tagging, packaging, and distributing lipids and proteins takes place in the Golgi apparatus (also called the Golgi body), a series of flattened membranes (Figure 4.20)."
+Golgi apparatus,is also called,Golgi body,"Sorting, tagging, packaging, and distributing lipids and proteins takes place in the Golgi apparatus (also called the Golgi body), a series of flattened membranes (Figure 4.20)."
+flattened membranes,are used for,"sorting, tagging, packaging, and distributing lipids and proteins","Sorting, tagging, packaging, and distributing lipids and proteins takes place in the Golgi apparatus (also called the Golgi body), a series of flattened membranes (Figure 4.20)."
+Golgi body,is a series of,flattened membranes,"Sorting, tagging, packaging, and distributing lipids and proteins takes place in the Golgi apparatus (also called the Golgi body), a series of flattened membranes (Figure 4.20)."
+flattened membranes,are shown in,Figure 4.20,"Sorting, tagging, packaging, and distributing lipids and proteins takes place in the Golgi apparatus (also called the Golgi body), a series of flattened membranes (Figure 4.20)."
+Golgi apparatus,is part of,white blood cell,"The Golgi apparatus in this white blood cell is visible as a stack of semicircular, flattened rings in the lower portion of the image."
+vesicles,are near,Golgi apparatus,You can see several vesicles near the Golgi apparatus.
+Golgi apparatus,has cis face,cis face,We call the Golgi apparatus' the cis face.
+trans face,is opposite of,opposite side,The opposite side is the trans face.
+transport vesicles,formed from,ER,"The transport vesicles that formed from the ER travel to the cis face, fuse with it, and empty their contents into the Golgi apparatus' lumen."
+transport vesicles,travel to,cis face,"The transport vesicles that formed from the ER travel to the cis face, fuse with it, and empty their contents into the Golgi apparatus' lumen."
+transport vesicles,fuse with,cis face,"The transport vesicles that formed from the ER travel to the cis face, fuse with it, and empty their contents into the Golgi apparatus' lumen."
+transport vesicles,empty contents into,Golgi apparatus' lumen,"The transport vesicles that formed from the ER travel to the cis face, fuse with it, and empty their contents into the Golgi apparatus' lumen."
+proteins,undergo modifications in,Golgi,"As the proteins and lipids travel through the Golgi, they undergo further modifications that allow them to be sorted."
+lipids,undergo modifications in,Golgi,"As the proteins and lipids travel through the Golgi, they undergo further modifications that allow them to be sorted."
+proteins,are sorted in,Golgi,"As the proteins and lipids travel through the Golgi, they undergo further modifications that allow them to be sorted."
+lipids,are sorted in,Golgi,"As the proteins and lipids travel through the Golgi, they undergo further modifications that allow them to be sorted."
+modification,is frequent in,sugar molecule chains,The most frequent modification is adding short sugar molecule chains.
+sugar molecule chains,are added to,modification,The most frequent modification is adding short sugar molecule chains.
+proteins,are modified to tag with phosphate groups,travel to their proper destinations,These newly modified proteins and lipids then tag with phosphate groups or other small molecules in order to travel to their proper destinations.
+lipids,are modified to tag with other small molecules,travel to their proper destinations,These newly modified proteins and lipids then tag with phosphate groups or other small molecules in order to travel to their proper destinations.
+proteins,are packaged into,secretory vesicles,"Finally, the modified and tagged proteins are packaged into secretory vesicles that bud from the Golgi's trans face."
+secretory vesicles,bud from,Golgi's trans face,"Finally, the modified and tagged proteins are packaged into secretory vesicles that bud from the Golgi's trans face."
+vesicles,deposit contents into,other cell parts,"While some of these vesicles deposit their contents into other cell parts where they will be used, other secretory vesicles fuse with the plasma membrane and release their contents outside the cell."
+vesicles,fuse with,plasma membrane,"While some of these vesicles deposit their contents into other cell parts where they will be used, other secretory vesicles fuse with the plasma membrane and release their contents outside the cell."
+vesicles,release contents outside,cell,"While some of these vesicles deposit their contents into other cell parts where they will be used, other secretory vesicles fuse with the plasma membrane and release their contents outside the cell."
+cells,have abundance of,Golgi,"In another example of form following function, cells that engage in a great deal of secretory activity (such as salivary gland cells that secrete digestive enzymes or immune system cells that secrete antibodies) have an abundance of Golgi."
+salivary gland cells,secrete,digestive enzymes,"In another example of form following function, cells that engage in a great deal of secretory activity (such as salivary gland cells that secrete digestive enzymes or immune system cells that secrete antibodies) have an abundance of Golgi."
+immune system cells,secrete,antibodies,"In another example of form following function, cells that engage in a great deal of secretory activity (such as salivary gland cells that secrete digestive enzymes or immune system cells that secrete antibodies) have an abundance of Golgi."
+Golgi apparatus,has role in synthesizing,polysaccharides,"In plant cells, the Golgi apparatus has the additional role of synthesizing polysaccharides, some of which are incorporated into the cell wall and some of which other cell parts use."
+polysaccharides,are incorporated into,cell wall,"In plant cells, the Golgi apparatus has the additional role of synthesizing polysaccharides, some of which are incorporated into the cell wall and some of which other cell parts use."
+polysaccharides,are used by,other cell parts,"In plant cells, the Golgi apparatus has the additional role of synthesizing polysaccharides, some of which are incorporated into the cell wall and some of which other cell parts use."
+Golgi apparatus,is present in,plant cells,"In plant cells, the Golgi apparatus has the additional role of synthesizing polysaccharides, some of which are incorporated into the cell wall and some of which other cell parts use."
+diseases,arise from,genetic mutations,Many diseases arise from genetic mutations that prevent synthesizing critical proteins.
+genetic mutations,prevent synthesizing,critical proteins,Many diseases arise from genetic mutations that prevent synthesizing critical proteins.
+Lowe disease,is also known as,oculocerebrorenal syndrome,"One such disease is Lowe disease (or oculocerebrorenal syndrome, because it affects the eyes, brain, and kidneys)."
+Lowe disease,affects,eyes,"One such disease is Lowe disease (or oculocerebrorenal syndrome, because it affects the eyes, brain, and kidneys)."
+Lowe disease,affects,brain,"One such disease is Lowe disease (or oculocerebrorenal syndrome, because it affects the eyes, brain, and kidneys)."
+Lowe disease,affects,kidneys,"One such disease is Lowe disease (or oculocerebrorenal syndrome, because it affects the eyes, brain, and kidneys)."
+Lowe disease,has deficiency in,enzyme,"In Lowe disease, there is a deficiency in an enzyme localized to the Golgi apparatus."
+enzyme,is localized to,Golgi apparatus,"In Lowe disease, there is a deficiency in an enzyme localized to the Golgi apparatus."
+Children with Lowe disease,are born with,cataracts,"Children with Lowe disease are born with cataracts, typically develop kidney disease after the first year of life, and may have impaired mental abilities."
+Children with Lowe disease,typically develop,kidney disease after the first year of life,"Children with Lowe disease are born with cataracts, typically develop kidney disease after the first year of life, and may have impaired mental abilities."
+Children with Lowe disease,may have,impaired mental abilities,"Children with Lowe disease are born with cataracts, typically develop kidney disease after the first year of life, and may have impaired mental abilities."
+mutation,causes,Lowe disease,A mutation on the X chromosome causes Lowe disease.
+Lowe disease,is caused by,mutation,A mutation on the X chromosome causes Lowe disease.
+mutation,is located on,X chromosome,A mutation on the X chromosome causes Lowe disease.
+X chromosome,has mutation causing,Lowe disease,A mutation on the X chromosome causes Lowe disease.
+X chromosome,is one of,human sex chromosomes,"The X chromosome is one of the two human sex chromosomes, as these chromosomes determine a person's sex."
+human sex chromosomes,determine,person's sex,"The X chromosome is one of the two human sex chromosomes, as these chromosomes determine a person's sex."
+Females,possess,two X chromosomes,Females possess two X chromosomes while males possess one X and one Y chromosome.
+males,possess,one X and one Y chromosome,Females possess two X chromosomes while males possess one X and one Y chromosome.
+males,possess,X chromosome,Females possess two X chromosomes while males possess one X and one Y chromosome.
+males,possess,Y chromosome,Females possess two X chromosomes while males possess one X and one Y chromosome.
+females,have genes expressed on,one of the two X chromosomes,"In females, the genes on only one of the two X chromosomes are expressed."
+X chromosomes,are expressed in,only one of the two X chromosomes,"In females, the genes on only one of the two X chromosomes are expressed."
+Females,carry gene,Lowe disease gene,Females who carry the Lowe disease gene on one of their X chromosomes are carriers and do not show symptoms of the disease.
+Females,have chromosome,X chromosomes,Females who carry the Lowe disease gene on one of their X chromosomes are carriers and do not show symptoms of the disease.
+Lowe disease gene,on chromosome,X,Females who carry the Lowe disease gene on one of their X chromosomes are carriers and do not show symptoms of the disease.
+carriers,do not show symptoms of,Lowe disease,Females who carry the Lowe disease gene on one of their X chromosomes are carriers and do not show symptoms of the disease.
+males,have,one X chromosome,"However, males only have one X chromosome and the genes on this chromosome are always expressed."
+genes,on,X chromosome,"However, males only have one X chromosome and the genes on this chromosome are always expressed."
+males,have,Lowe disease,"Therefore, males will always have Lowe disease if their X chromosome carries the Lowe disease gene."
+X chromosome,carries,Lowe disease gene,"Therefore, males will always have Lowe disease if their X chromosome carries the Lowe disease gene."
+Geneticists,identify,mutated gene's location,"Geneticists have identified the mutated gene's location, as well as many other mutation locations that cause genetic diseases."
+Geneticists,identify,mutation locations,"Geneticists have identified the mutated gene's location, as well as many other mutation locations that cause genetic diseases."
+mutation locations,cause,genetic diseases,"Geneticists have identified the mutated gene's location, as well as many other mutation locations that cause genetic diseases."
+woman,carrying,fetus,"Through prenatal testing, a woman can find out if the fetus she is carrying may be afflicted with one of several genetic diseases."
+prenatal testing,can find out if,fetus may be afflicted with genetic diseases,"Through prenatal testing, a woman can find out if the fetus she is carrying may be afflicted with one of several genetic diseases."
+Geneticists,analyze,prenatal genetic test results,Geneticists analyze prenatal genetic test results and may counsel pregnant women on available options.
+Geneticists,counsel,pregnant women,Geneticists analyze prenatal genetic test results and may counsel pregnant women on available options.
+prenatal genetic test results,relate to,pregnant women,Geneticists analyze prenatal genetic test results and may counsel pregnant women on available options.
+They,conduct,genetic research,"They may also conduct genetic research that leads to new drugs or foods, or perform DNA analyses for forensic investigations."
+genetic research,leads to,new drugs,"They may also conduct genetic research that leads to new drugs or foods, or perform DNA analyses for forensic investigations."
+genetic research,leads to,foods,"They may also conduct genetic research that leads to new drugs or foods, or perform DNA analyses for forensic investigations."
+They,perform,DNA analyses,"They may also conduct genetic research that leads to new drugs or foods, or perform DNA analyses for forensic investigations."
+DNA analyses,are performed for,forensic investigations,"They may also conduct genetic research that leads to new drugs or foods, or perform DNA analyses for forensic investigations."
+lysosomes,part of,endomembrane system,"In addition to their role as the digestive component and organelle-recycling facility of animal cells, lysosomes are part of the endomembrane system."
+Lysosomes,use,hydrolytic enzymes,Lysosomes also use their hydrolytic enzymes to destroy pathogens (disease-causing organisms) that might enter the cell.
+hydrolytic enzymes,destroy,pathogens,Lysosomes also use their hydrolytic enzymes to destroy pathogens (disease-causing organisms) that might enter the cell.
+macrophages,are part of,immune system,"A good example of this occurs in macrophages, a group of white blood cells which are part of your body's immune system."
+macrophages,are a group of,white blood cells,"A good example of this occurs in macrophages, a group of white blood cells which are part of your body's immune system."
+white blood cells,are part of,immune system,"A good example of this occurs in macrophages, a group of white blood cells which are part of your body's immune system."
+scientists,call,phagocytosis,"In a process that scientists call phagocytosis or endocytosis, a section of the macrophage's plasma membrane invaginates (folds in) and engulfs a pathogen."
+process,call,phagocytosis,"In a process that scientists call phagocytosis or endocytosis, a section of the macrophage's plasma membrane invaginates (folds in) and engulfs a pathogen."
+process,call,endocytosis,"In a process that scientists call phagocytosis or endocytosis, a section of the macrophage's plasma membrane invaginates (folds in) and engulfs a pathogen."
+macrophage,invaginates,section of plasma membrane,"In a process that scientists call phagocytosis or endocytosis, a section of the macrophage's plasma membrane invaginates (folds in) and engulfs a pathogen."
+section of plasma membrane,engulfs,pathogen,"In a process that scientists call phagocytosis or endocytosis, a section of the macrophage's plasma membrane invaginates (folds in) and engulfs a pathogen."
+invaginated section,contains,pathogen,"The invaginated section, with the pathogen inside, then pinches itself off from the plasma membrane and becomes a vesicle."
+invaginated section,pinches off from,plasma membrane,"The invaginated section, with the pathogen inside, then pinches itself off from the plasma membrane and becomes a vesicle."
+invaginated section,becomes,vesicle,"The invaginated section, with the pathogen inside, then pinches itself off from the plasma membrane and becomes a vesicle."
+vesicle,fuses with,lysosome,The vesicle fuses with a lysosome.
+lysosome,contains,hydrolytic enzymes,The lysosome's hydrolytic enzymes then destroy the pathogen (Figure 4.21).
+hydrolytic enzymes,destroy,pathogen,The lysosome's hydrolytic enzymes then destroy the pathogen (Figure 4.21).
+lysosome,destroys,pathogen,The lysosome's hydrolytic enzymes then destroy the pathogen (Figure 4.21).
+pathogen,shown in,Figure 4.21,The lysosome's hydrolytic enzymes then destroy the pathogen (Figure 4.21).
+macrophage,engulfed,bacterium,A macrophage has engulfed (phagocytized) a potentially pathogenic bacterium and then fuses with lysosomes within the cell to destroy the pathogen.
+macrophage,fuses with,lysosomes,A macrophage has engulfed (phagocytized) a potentially pathogenic bacterium and then fuses with lysosomes within the cell to destroy the pathogen.
+lysosomes,destroy,bacterium,A macrophage has engulfed (phagocytized) a potentially pathogenic bacterium and then fuses with lysosomes within the cell to destroy the pathogen.
+cell,contains,organelles,Other organelles are present in the cell but for simplicity we do not show them.

@@ -1,0 +1,145 @@
+subject,relation,object,sentence
+Cells,category,prokaryotic,Cells fall into one of two broad categories: prokaryotic and eukaryotic.
+Cells,category,eukaryotic,Cells fall into one of two broad categories: prokaryotic and eukaryotic.
+Bacteria,classified as,prokaryotes,"We classify only the predominantly single-celled organisms Bacteria and Archaea as prokaryotes (pro- = ""before""; -kary- = ""nucleus"")."
+Archaea,classified as,prokaryotes,"We classify only the predominantly single-celled organisms Bacteria and Archaea as prokaryotes (pro- = ""before""; -kary- = ""nucleus"")."
+eukaryotes,include,plants,"Animal cells, plants, fungi, and protists are all eukaryotes (eu- = ""true"")."
+eukaryotes,include,animals,"Animal cells, plants, fungi, and protists are all eukaryotes (eu- = ""true"")."
+eukaryotes,include,fungi,"Animal cells, plants, fungi, and protists are all eukaryotes (eu- = ""true"")."
+eukaryotes,include,protists,"Animal cells, plants, fungi, and protists are all eukaryotes (eu- = ""true"")."
+cells,have components,plasma membrane,"All cells share four common components: 1) a plasma membrane, an outer covering that separates the cell's interior from its surrounding environment; 2) cytoplasm, consisting of a jelly-like cytosol within the cell in which there are other cellular components; 3) DNA, the cell's genetic material; and 4) ribosomes, which synthesize proteins."
+cells,have components,cytoplasm,"All cells share four common components: 1) a plasma membrane, an outer covering that separates the cell's interior from its surrounding environment; 2) cytoplasm, consisting of a jelly-like cytosol within the cell in which there are other cellular components; 3) DNA, the cell's genetic material; and 4) ribosomes, which synthesize proteins."
+cells,have components,DNA,"All cells share four common components: 1) a plasma membrane, an outer covering that separates the cell's interior from its surrounding environment; 2) cytoplasm, consisting of a jelly-like cytosol within the cell in which there are other cellular components; 3) DNA, the cell's genetic material; and 4) ribosomes, which synthesize proteins."
+cells,have components,ribosomes,"All cells share four common components: 1) a plasma membrane, an outer covering that separates the cell's interior from its surrounding environment; 2) cytoplasm, consisting of a jelly-like cytosol within the cell in which there are other cellular components; 3) DNA, the cell's genetic material; and 4) ribosomes, which synthesize proteins."
+plasma membrane,separates,cell's interior from its surrounding environment,"All cells share four common components: 1) a plasma membrane, an outer covering that separates the cell's interior from its surrounding environment; 2) cytoplasm, consisting of a jelly-like cytosol within the cell in which there are other cellular components; 3) DNA, the cell's genetic material; and 4) ribosomes, which synthesize proteins."
+cytoplasm,contains,cellular components,"All cells share four common components: 1) a plasma membrane, an outer covering that separates the cell's interior from its surrounding environment; 2) cytoplasm, consisting of a jelly-like cytosol within the cell in which there are other cellular components; 3) DNA, the cell's genetic material; and 4) ribosomes, which synthesize proteins."
+DNA,is,cell's genetic material,"All cells share four common components: 1) a plasma membrane, an outer covering that separates the cell's interior from its surrounding environment; 2) cytoplasm, consisting of a jelly-like cytosol within the cell in which there are other cellular components; 3) DNA, the cell's genetic material; and 4) ribosomes, which synthesize proteins."
+ribosomes,synthesize,proteins,"All cells share four common components: 1) a plasma membrane, an outer covering that separates the cell's interior from its surrounding environment; 2) cytoplasm, consisting of a jelly-like cytosol within the cell in which there are other cellular components; 3) DNA, the cell's genetic material; and 4) ribosomes, which synthesize proteins."
+prokaryotes,differ from,eukaryotic cells,"However, prokaryotes differ from eukaryotic cells in several ways."
+prokaryote,is a type of,organism,"A prokaryote is a simple, mostly single-celled (unicellular) organism that lacks a nucleus, or any other membrane-bound organelle."
+prokaryote,is mostly,single-celled,"A prokaryote is a simple, mostly single-celled (unicellular) organism that lacks a nucleus, or any other membrane-bound organelle."
+prokaryote,lacks,nucleus,"A prokaryote is a simple, mostly single-celled (unicellular) organism that lacks a nucleus, or any other membrane-bound organelle."
+prokaryote,lacks,membrane-bound organelle,"A prokaryote is a simple, mostly single-celled (unicellular) organism that lacks a nucleus, or any other membrane-bound organelle."
+eukaryotes,have significant differences with respect to prokaryotes,,We will shortly come to see that this is significantly different in eukaryotes.
+Prokaryotic DNA,is in,the cell's central part: the nucleoid,Prokaryotic DNA is in the cell's central part: the nucleoid (Figure 4.5).
+the nucleoid,is shown in,Figure 4.5,Prokaryotic DNA is in the cell's central part: the nucleoid (Figure 4.5).
+prokaryotic cell,has structure,generalized structure,This figure shows the generalized structure of a prokaryotic cell.
+prokaryotes,have,chromosomal DNA,"All prokaryotes have chromosomal DNA localized in a nucleoid, ribosomes, a cell membrane, and a cell wall."
+prokaryotes,have,nucleoid,"All prokaryotes have chromosomal DNA localized in a nucleoid, ribosomes, a cell membrane, and a cell wall."
+prokaryotes,have,ribosomes,"All prokaryotes have chromosomal DNA localized in a nucleoid, ribosomes, a cell membrane, and a cell wall."
+prokaryotes,have,cell membrane,"All prokaryotes have chromosomal DNA localized in a nucleoid, ribosomes, a cell membrane, and a cell wall."
+prokaryotes,have,cell wall,"All prokaryotes have chromosomal DNA localized in a nucleoid, ribosomes, a cell membrane, and a cell wall."
+chromosomal DNA,localized in,nucleoid,"All prokaryotes have chromosomal DNA localized in a nucleoid, ribosomes, a cell membrane, and a cell wall."
+ribosomes,part of,prokaryotes,"All prokaryotes have chromosomal DNA localized in a nucleoid, ribosomes, a cell membrane, and a cell wall."
+cell membrane,part of,prokaryotes,"All prokaryotes have chromosomal DNA localized in a nucleoid, ribosomes, a cell membrane, and a cell wall."
+cell wall,part of,prokaryotes,"All prokaryotes have chromosomal DNA localized in a nucleoid, ribosomes, a cell membrane, and a cell wall."
+structures,are present in,bacteria,"The other structures shown are present in some, but not all, bacteria."
+prokaryotes,have,peptidoglycan cell wall,Most prokaryotes have a peptidoglycan cell wall and many have a polysaccharide capsule (Figure 4.5).
+prokaryotes,have,polysaccharide capsule,Most prokaryotes have a peptidoglycan cell wall and many have a polysaccharide capsule (Figure 4.5).
+prokaryotes,have,Figure 4.5,Most prokaryotes have a peptidoglycan cell wall and many have a polysaccharide capsule (Figure 4.5).
+cell wall,acts as,extra layer of protection,"The cell wall acts as an extra layer of protection, helps the cell maintain its shape, and prevents dehydration."
+cell wall,helps maintain,cell shape,"The cell wall acts as an extra layer of protection, helps the cell maintain its shape, and prevents dehydration."
+cell wall,prevents,dehydration,"The cell wall acts as an extra layer of protection, helps the cell maintain its shape, and prevents dehydration."
+cell,has capsule,capsule,The capsule enables the cell to attach to surfaces in its environment.
+capsule,enables attachment to surfaces,environment,The capsule enables the cell to attach to surfaces in its environment.
+prokaryotes,have flagella,yes,"Some prokaryotes have flagella, pili, or fimbriae."
+prokaryotes,have pili,yes,"Some prokaryotes have flagella, pili, or fimbriae."
+prokaryotes,have fimbriae,yes,"Some prokaryotes have flagella, pili, or fimbriae."
+Flagella,used for,locomotion,Flagella are used for locomotion.
+Pili,exchange genetic material during,conjugation,"Pili exchange genetic material during conjugation, the process by which one bacterium transfers genetic material to another through direct contact."
+bacterium,transfers genetic material to,another,"Pili exchange genetic material during conjugation, the process by which one bacterium transfers genetic material to another through direct contact."
+Bacteria,use,fimbriae,Bacteria use fimbriae to attach to a host cell.
+fimbriae,attach to,host cell,Bacteria use fimbriae to attach to a host cell.
+anyone,can take,prevent spread of contagious illnesses,The most effective action anyone can take to prevent the spread of contagious illnesses is to wash his or her hands.
+most effective action,is,wash hands,The most effective action anyone can take to prevent the spread of contagious illnesses is to wash his or her hands.
+Why,is about,unknown,Why?
+microbes,are ubiquitous,,Because microbes (organisms so tiny that they can only be seen with microscopes) are ubiquitous.
+They,live on,doorknobs,"They live on doorknobs, money, your hands, and many other surfaces."
+They,live on,money,"They live on doorknobs, money, your hands, and many other surfaces."
+They,live on,your hands,"They live on doorknobs, money, your hands, and many other surfaces."
+They,live on,many other surfaces,"They live on doorknobs, money, your hands, and many other surfaces."
+someone,sneezes into,hand,"If someone sneezes into his hand and touches a doorknob, and afterwards you touch that same doorknob, the microbes from the sneezer's mucus are now on your hands."
+someone,touches,doorknob,"If someone sneezes into his hand and touches a doorknob, and afterwards you touch that same doorknob, the microbes from the sneezer's mucus are now on your hands."
+microbes,on,hands,"If someone sneezes into his hand and touches a doorknob, and afterwards you touch that same doorknob, the microbes from the sneezer's mucus are now on your hands."
+sneezer's mucus,from,microbes,"If someone sneezes into his hand and touches a doorknob, and afterwards you touch that same doorknob, the microbes from the sneezer's mucus are now on your hands."
+you,can make sick,"by touching your hands to your mouth, nose, or eyes","If you touch your hands to your mouth, nose, or eyes, those microbes can enter your body and could make you sick."
+microbes,can enter,your body,"If you touch your hands to your mouth, nose, or eyes, those microbes can enter your body and could make you sick."
+microbes,are called,microorganisms,"However, not all microbes (also called microorganisms) cause disease; most are actually beneficial."
+microorganisms,are beneficial,most,"However, not all microbes (also called microorganisms) cause disease; most are actually beneficial."
+microbes,make vitamin K,in gut,You have microbes in your gut that make vitamin K. Other microorganisms are used to ferment beer and wine.
+microorganisms,used to ferment,beer,You have microbes in your gut that make vitamin K. Other microorganisms are used to ferment beer and wine.
+microorganisms,used to ferment,wine,You have microbes in your gut that make vitamin K. Other microorganisms are used to ferment beer and wine.
+Microbiologists,study,microbes,Microbiologists are scientists who study microbes.
+Microbiologists,can pursue,a number of careers,Microbiologists can pursue a number of careers.
+they,work in,food industry,"Not only do they work in the food industry, they are also employed in the veterinary and medical fields."
+they,employed in,veterinary,"Not only do they work in the food industry, they are also employed in the veterinary and medical fields."
+they,employed in,medical fields,"Not only do they work in the food industry, they are also employed in the veterinary and medical fields."
+they,work in,pharmaceutical sector,"They can work in the pharmaceutical sector, serving key roles in research and development by identifying new antibiotic sources that can treat bacterial infections."
+they,serve in,research and development,"They can work in the pharmaceutical sector, serving key roles in research and development by identifying new antibiotic sources that can treat bacterial infections."
+research and development,identify,new antibiotic sources,"They can work in the pharmaceutical sector, serving key roles in research and development by identifying new antibiotic sources that can treat bacterial infections."
+new antibiotic sources,treat,bacterial infections,"They can work in the pharmaceutical sector, serving key roles in research and development by identifying new antibiotic sources that can treat bacterial infections."
+Environmental microbiologists,look for,new ways to use specially selected or genetically engineered microbes to remove pollutants from soil or groundwater,"Environmental microbiologists may look for new ways to use specially selected or genetically engineered microbes to remove pollutants from soil or groundwater, as well as hazardous elements from contaminated sites."
+Environmental microbiologists,look for,new ways to use specially selected or genetically engineered microbes to remove hazardous elements from contaminated sites,"Environmental microbiologists may look for new ways to use specially selected or genetically engineered microbes to remove pollutants from soil or groundwater, as well as hazardous elements from contaminated sites."
+microbes,remove,pollutants from soil,"Environmental microbiologists may look for new ways to use specially selected or genetically engineered microbes to remove pollutants from soil or groundwater, as well as hazardous elements from contaminated sites."
+microbes,remove,pollutants from groundwater,"Environmental microbiologists may look for new ways to use specially selected or genetically engineered microbes to remove pollutants from soil or groundwater, as well as hazardous elements from contaminated sites."
+microbes,remove,hazardous elements from contaminated sites,"Environmental microbiologists may look for new ways to use specially selected or genetically engineered microbes to remove pollutants from soil or groundwater, as well as hazardous elements from contaminated sites."
+bioremediation technologies,is called,using these microbes,We call using these microbes bioremediation technologies.
+using these microbes,is a part of,bioremediation technologies,We call using these microbes bioremediation technologies.
+Microbiologists,work in,bioinformatics field,"Microbiologists can also work in the bioinformatics field, providing specialized knowledge and insight for designing, developing, and specificity of computer models of, for example, bacterial epidemics."
+Microbiologists,provide,specialized knowledge,"Microbiologists can also work in the bioinformatics field, providing specialized knowledge and insight for designing, developing, and specificity of computer models of, for example, bacterial epidemics."
+Microbiologists,provide,insight,"Microbiologists can also work in the bioinformatics field, providing specialized knowledge and insight for designing, developing, and specificity of computer models of, for example, bacterial epidemics."
+Microbiologists,design,computer models,"Microbiologists can also work in the bioinformatics field, providing specialized knowledge and insight for designing, developing, and specificity of computer models of, for example, bacterial epidemics."
+Microbiologists,develop,computer models,"Microbiologists can also work in the bioinformatics field, providing specialized knowledge and insight for designing, developing, and specificity of computer models of, for example, bacterial epidemics."
+computer models,specificity of,bacterial epidemics,"Microbiologists can also work in the bioinformatics field, providing specialized knowledge and insight for designing, developing, and specificity of computer models of, for example, bacterial epidemics."
+prokaryotic cells,are smaller than,eukaryotic cells,"At 0.1 to 5.0 μm in diameter, prokaryotic cells are significantly smaller than eukaryotic cells, which have diameters ranging from 10 to 100 μm (Figure 4.6)."
+eukaryotic cells,have diameters ranging from,10 to 100 μm,"At 0.1 to 5.0 μm in diameter, prokaryotic cells are significantly smaller than eukaryotic cells, which have diameters ranging from 10 to 100 μm (Figure 4.6)."
+prokaryotic cells,have diameters ranging from,0.1 to 5.0 μm,"At 0.1 to 5.0 μm in diameter, prokaryotic cells are significantly smaller than eukaryotic cells, which have diameters ranging from 10 to 100 μm (Figure 4.6)."
+Figure 4.6,depicts,the diameters of prokaryotic and eukaryotic cells,"At 0.1 to 5.0 μm in diameter, prokaryotic cells are significantly smaller than eukaryotic cells, which have diameters ranging from 10 to 100 μm (Figure 4.6)."
+prokaryotes,have size,small,The prokaryotes' small size allows ions and organic molecules that enter them to quickly diffuse to other parts of the cell.
+prokaryotes,allow diffusion of,ions,The prokaryotes' small size allows ions and organic molecules that enter them to quickly diffuse to other parts of the cell.
+prokaryotes,allow diffusion of,organic molecules,The prokaryotes' small size allows ions and organic molecules that enter them to quickly diffuse to other parts of the cell.
+ions,diffuse to,other parts of cell,The prokaryotes' small size allows ions and organic molecules that enter them to quickly diffuse to other parts of the cell.
+organic molecules,diffuse to,other parts of cell,The prokaryotes' small size allows ions and organic molecules that enter them to quickly diffuse to other parts of the cell.
+wastes,produced within,prokaryotic cell,"Similarly, any wastes produced within a prokaryotic cell can quickly diffuse."
+prokaryotic cell,can quickly diffuse,any wastes produced,"Similarly, any wastes produced within a prokaryotic cell can quickly diffuse."
+eukaryotic cells,have developed,different structural adaptations,"This is not the case in eukaryotic cells, which have developed different structural adaptations to enhance intracellular transport."
+different structural adaptations,enhance,intracellular transport,"This is not the case in eukaryotic cells, which have developed different structural adaptations to enhance intracellular transport."
+logarithmic scale,shows relative sizes of,microbes,This figure shows relative sizes of microbes on a logarithmic scale (recall that each unit of increase in a logarithmic scale represents a 10-fold increase in the quantity measured).
+cells,have size,small size,"Small size, in general, is necessary for all cells, whether prokaryotic or eukaryotic."
+cells,are either prokaryotic or eukaryotic,prokaryotic and eukaryotic,"Small size, in general, is necessary for all cells, whether prokaryotic or eukaryotic."
+JSON,is formatted as,list,Let's examine why that is so.
+list,contains,key terms,Let's examine why that is so.
+key terms,are ordered by importance,from most important to least important,Let's examine why that is so.
+cell,has area,considered,"First, we'll consider the area and volume of a typical cell."
+cell,has volume,considered,"First, we'll consider the area and volume of a typical cell."
+cells,have shape,approximate sphere,"Not all cells are spherical in shape, but most tend to approximate a sphere."
+sphere,is approximated by,most cells,"Not all cells are spherical in shape, but most tend to approximate a sphere."
+sphere,has surface area,4πr2,"You may remember from your high school geometry course that the formula for the surface area of a sphere is 4πr2, while the formula for its volume is 4πr3/3."
+sphere,has volume,4πr3/3,"You may remember from your high school geometry course that the formula for the surface area of a sphere is 4πr2, while the formula for its volume is 4πr3/3."
+cell,has surface area,increases as the square of its radius,"Thus, as the radius of a cell increases, its surface area increases as the square of its radius, but its volume increases as the cube of its radius (much more rapidly)."
+cell,has volume,increases as the cube of its radius,"Thus, as the radius of a cell increases, its surface area increases as the square of its radius, but its volume increases as the cube of its radius (much more rapidly)."
+cell,increases in size,surface area-to-volume ratio decreases,"Therefore, as a cell increases in size, its surface area-to-volume ratio decreases."
+cell,has shape,cube,This same principle would apply if the cell had a cube shape (Figure 4.7).
+cube,is shown in,Figure 4.7,This same principle would apply if the cell had a cube shape (Figure 4.7).
+cell,grows too large,plasma membrane,"If the cell grows too large, the plasma membrane will not have sufficient surface area to support the rate of diffusion required for the increased volume."
+plasma membrane,not have,sufficient surface area,"If the cell grows too large, the plasma membrane will not have sufficient surface area to support the rate of diffusion required for the increased volume."
+sufficient surface area,support,rate of diffusion,"If the cell grows too large, the plasma membrane will not have sufficient surface area to support the rate of diffusion required for the increased volume."
+rate of diffusion,required for,increased volume,"If the cell grows too large, the plasma membrane will not have sufficient surface area to support the rate of diffusion required for the increased volume."
+cell,grows,less efficient,"In other words, as a cell grows, it becomes less efficient."
+efficiency,is divided into,parts,One way to become more efficient is to divide.
+organelles,perform,specific tasks,Another way is to develop organelles that perform specific tasks.
+adaptations,lead to,developing more sophisticated cells,"These adaptations lead to developing more sophisticated cells, which we call eukaryotic cells."
+developing more sophisticated cells,call,eukaryotic cells,"These adaptations lead to developing more sophisticated cells, which we call eukaryotic cells."
+cell,increases in size,surface area-to-volume ratio decreases,"Notice that as a cell increases in size, its surface area-to-volume ratio decreases."
+cell,has increasing volume,increase,"When there is insufficient surface area to support a cell's increasing volume, a cell will either divide or die."
+cell,requires surface area,support,"When there is insufficient surface area to support a cell's increasing volume, a cell will either divide or die."
+cell,will divide or die,when there is insufficient surface area to support its increasing volume,"When there is insufficient surface area to support a cell's increasing volume, a cell will either divide or die."
+cell,has volume,1 mm3,"The cell on the left has a volume of 1 mm3 and a surface area of 6 mm2, with a surface area-to-volume ratio of 6 to 1; whereas, the cell on the right has a volume of 8 mm3 and a surface area of 24 mm2, with a surface area-to-volume ratio of 3 to 1."
+cell,has surface area,6 mm2,"The cell on the left has a volume of 1 mm3 and a surface area of 6 mm2, with a surface area-to-volume ratio of 6 to 1; whereas, the cell on the right has a volume of 8 mm3 and a surface area of 24 mm2, with a surface area-to-volume ratio of 3 to 1."
+cell,has surface area-to-volume ratio,6 to 1,"The cell on the left has a volume of 1 mm3 and a surface area of 6 mm2, with a surface area-to-volume ratio of 6 to 1; whereas, the cell on the right has a volume of 8 mm3 and a surface area of 24 mm2, with a surface area-to-volume ratio of 3 to 1."
+cell,has volume,8 mm3,"The cell on the left has a volume of 1 mm3 and a surface area of 6 mm2, with a surface area-to-volume ratio of 6 to 1; whereas, the cell on the right has a volume of 8 mm3 and a surface area of 24 mm2, with a surface area-to-volume ratio of 3 to 1."
+cell,has surface area,24 mm2,"The cell on the left has a volume of 1 mm3 and a surface area of 6 mm2, with a surface area-to-volume ratio of 6 to 1; whereas, the cell on the right has a volume of 8 mm3 and a surface area of 24 mm2, with a surface area-to-volume ratio of 3 to 1."
+cell,has surface area-to-volume ratio,3 to 1,"The cell on the left has a volume of 1 mm3 and a surface area of 6 mm2, with a surface area-to-volume ratio of 6 to 1; whereas, the cell on the right has a volume of 8 mm3 and a surface area of 24 mm2, with a surface area-to-volume ratio of 3 to 1."
+Prokaryotic cells,are much smaller than,eukaryotic cells,Prokaryotic cells are much smaller than eukaryotic cells.
+small cell size,confer advantages on,a cell,What advantages might small cell size confer on a cell?
+large cell size,has advantages,unknown,What advantages might large cell size have?

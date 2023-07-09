@@ -1,0 +1,47 @@
+keywords,sentence
+"['tissue', 'cells']",You already know that tissue is a group of similar cells working together.
+"['cells', 'communicate', 'group project']","As you might expect, if cells are to work together, they must communicate with each other, just as you need to communicate with others if you work on a group project."
+['cells'],Let's take a look at how cells communicate with each other.
+"['multicellular organisms', 'extracellular space', 'animal cells']","While cells in most multicellular organisms release materials into the extracellular space, animal cells will be discussed as an example."
+"['proteins', 'collagen']","The primary components of these materials are proteins, and the most abundant protein is collagen."
+"['Collagen fibers', 'proteoglycans']","Collagen fibers are interwoven with proteoglycans, which are carbohydrate-containing protein molecules."
+"['extracellular matrix', 'Figure 4.27']","Collectively, we call these materials the extracellular matrix (Figure 4.27)."
+"['extracellular matrix', 'cells', 'tissue']","Not only does the extracellular matrix hold the cells together to form a tissue, but it also allows the cells within the tissue to communicate with each other."
+['happen'],How can this happen?
+"['extracellular matrix', 'proteins', 'carbohydrates']",The extracellular matrix consists of a network of proteins and carbohydrates.
+"['cells', 'protein receptors', 'plasma membranes', 'extracellular surfaces']",Cells have protein receptors on their plasma membranes' extracellular surfaces.
+"['molecule', 'matrix', 'receptor']","When a molecule within the matrix binds to the receptor, it changes the receptor's molecular structure."
+"['receptor', 'microfilaments', 'plasma membrane']","The receptor, in turn, changes the microfilaments' conformation positioned just inside the plasma membrane."
+"['cell', 'conformational changes', 'chemical signals', 'nucleus', 'transcription', 'DNA', 'protein production', 'activities']","These conformational changes induce chemical signals inside the cell that reach the nucleus and turn ""on"" or ""off"" the transcription of specific DNA sections, which affects the associated protein production, thus changing the activities within the cell."
+"['extracellular matrix', 'Blood clotting', 'cell communication']",Blood clotting provides an example of the extracellular matrix's role in cell communication.
+"['blood vessel', 'protein receptor', 'tissue factor']","When the cells lining a blood vessel are damaged, they display a protein receptor, which we call tissue factor."
+"['tissue factor', 'extracellular matrix', 'platelets', 'blood vessel', 'smooth muscle cells', 'clotting factors']","When tissue factor binds with another factor in the extracellular matrix, it causes platelets to adhere to the damaged blood vessel's wall, stimulates the adjacent smooth muscle cells in the blood vessel to contract (thus constricting the blood vessel), and initiates a series of steps that stimulate the platelets to produce clotting factors."
+"['Cells', 'intercellular junctions']","Cells can also communicate with each other via direct contact, or intercellular junctions."
+"['plant', 'animal', 'fungal']",There are differences in the ways that plant and animal and fungal cells communicate.
+"['plasmodesmata', 'plant cells', 'animal cell contacts', 'tight junctions', 'gap junctions', 'desmosomes']","Plasmodesmata are junctions between plant cells; whereas, animal cell contacts include tight junctions, gap junctions, and desmosomes."
+"['plasma membranes', 'plant cells', 'cell wall', 'neighboring']","In general, long stretches of the plasma membranes of neighboring plant cells cannot touch one another because the cell wall that surrounds each cell separates them (Figure 4.8)."
+"['plant', 'water', 'soil nutrients', 'roots', 'stems', 'leaves']","How then, can a plant transfer water and other soil nutrients from its roots, through its stems, and to its leaves?"
+"['xylem', 'phloem']",Such transport uses the vascular tissues (xylem and phloem) primarily.
+"['plasmodesmata', 'plasmodesma']","There also exist structural modifications, which we call plasmodesmata (singular = plasmodesma)."
+"['plant cells', 'cytoplasm', 'cell walls', 'Figure 4.28', 'materials']","Numerous channels that pass between adjacent plant cells' cell walls connect their cytoplasm, and enable transport of materials from cell to cell, and thus throughout the plant (Figure 4.28)."
+"['plasmodesma', 'plant cells', 'cell walls']",A plasmodesma is a channel between two adjacent plant cells' cell walls.
+['Plasmodesmata'],Plasmodesmata allow materials to pass from one plant cell's cytoplasm to an adjacent cell's cytoplasm.
+"['tight junction', 'animal cells', 'Figure 4.29']",A tight junction is a watertight seal between two adjacent animal cells (Figure 4.29).
+"['proteins', 'claudins', 'occludins', 'cells']",Proteins (predominantly two proteins called claudins and occludins) tightly hold the cells against each other.
+"['Tight junctions', 'animal cells']",Tight junctions form watertight connections between adjacent animal cells.
+"['Proteins', 'tight junction adherence']",Proteins create tight junction adherence.
+"['tight junctions', 'epithelial tissues', 'internal organs', 'skin']","This tight adherence prevents materials from leaking between the cells; tight junctions are typically found in epithelial tissues that line internal organs and cavities, and comprise most of the skin."
+"['epithelial cells', 'tight junctions', 'urinary bladder', 'extracellular space', 'urine']","For example, the tight junctions of the epithelial cells lining your urinary bladder prevent urine from leaking out into the extracellular space."
+"['desmosomes', 'animal cells', 'epithelial cells', 'Figure 4.30']","Also only in animal cells are desmosomes, which act like spot welds between adjacent epithelial cells (Figure 4.30)."
+"['Cadherins', 'plasma membrane', 'intermediate filaments', 'desmosomes']","Cadherins, short proteins in the plasma membrane connect to intermediate filaments to create desmosomes."
+"['cadherins', 'skin', 'heart', 'muscles']","The cadherins connect two adjacent cells and maintain the cells in a sheet-like formation in organs and tissues that stretch, like the skin, heart, and muscles."
+"['desmosome', 'cells']",A desmosome forms a very strong spot weld between cells.
+"['cadherins', 'intermediate filaments']",Linking cadherins and intermediate filaments create it.
+"['John Smith', 'New York', 'IBM', 'Watson', 'Jeopardy!', '2011']",.
+"['gap junctions', 'plasmodesmata']","Structurally, however, gap junctions and plasmodesmata differ."
+"['gap junction', 'protein', 'water', 'small molecules', 'animal cells']",A gap junction is a protein-lined pore that allows water and small molecules to pass between adjacent animal cells.
+"['plasma membrane', 'connexon']",in the plasma membrane arrange themselves in an elongated donut-like configuration - a connexon.
+"['connexon', 'animal cells']","When the connexon's pores (""doughnut holes"") in adjacent animal cells align, a channel between the two cells forms."
+"['Gap junctions', 'cardiac muscle']",Gap junctions are particularly important in cardiac muscle.
+"['gap junctions', 'electrical signal', 'muscle', 'heart muscle cells']","The electrical signal for the muscle to contract passes efficiently through gap junctions, allowing the heart muscle cells to contract in tandem."
+['virtual microscopy lab'],"To conduct a virtual microscopy lab and review the parts of a cell, work through the steps of this interactive assignment."
