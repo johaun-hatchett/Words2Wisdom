@@ -1,7 +1,7 @@
-from argparse import ArgumentParser
-from datetime import date
 import json
 import os
+from argparse import ArgumentParser
+from datetime import date
 
 from nltk.tokenize import sent_tokenize
 from tqdm import tqdm

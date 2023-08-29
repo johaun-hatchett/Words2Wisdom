@@ -29,8 +29,8 @@ infile
 
 Name | Description | Source
 --- | --- | ---
-`data/openstax/OS_bio_4_2.txt` | Chapter 4.2 of the OpenStax Biology 2nd edition textbook. | 
-`data/Seq2KG/...` | Processed test datasets from Seq2KG paper. | [GitHub](https://github.com/Michael-Stewart-Webdev/Seq2KG/tree/master)
+`data/openstax/...` | Sections from various OpenStax textbooks. | 
+`data/Seq2KG/...` | Processed test datasets from Seq2KG paper. ("Processing" = merging tokens back to sentences) | [GitHub](https://github.com/Michael-Stewart-Webdev/Seq2KG/tree/master)
 
 ## References
 

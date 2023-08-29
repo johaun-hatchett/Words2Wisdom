@@ -1,6 +1,7 @@
-import time
-from my_lib.chatbot import ChatGPT
 import re
+import time
+
+from chatbot import ChatGPT
 
 
 class BasePipeline:
