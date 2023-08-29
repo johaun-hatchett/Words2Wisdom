@@ -1,0 +1,37 @@
+[
+    {
+        "name": "LogicBased",
+        "prompt": [
+            {
+                "description": "Given the text, extract a list of the premises embedded within it. Focus on identifying declarative sentences that convey factual information.",
+                "args": ["text"]
+            },
+            {
+                "description": "Convert each premise into a knowledge graph triplet consisting of a subject, predicate, and object. The subject should be the main entity mentioned, the predicate should represent the relationship or attribute, and the object should be another entity or value associated with the subject. Return a list of these knowledge graph triplets, where each triplet has the form: <subject>::<relation>::<object>",
+                "args": []
+            }
+        ]
+    },
+    {
+        "name": "Traditional",
+        "prompt": [
+            {
+                "description": "Extract the entities from the text. Focus on descriptive noun chunks and noun phrases.",
+                "args": ["text"]
+            },
+            {
+                "description": "Label all pairs of entities with the appropriate relation between them (or N/A if none). The result will be a list of triplets of the form: <subject>::<relation>::<object>",
+                "args": []
+            }
+        ]
+    },
+    {
+        "name": "Direct",
+        "prompt": [
+            {
+                "description": "Extract a list of knowledge graph triplets from the text. Triplets should have the form: <subject>::<relation>::<object>.",
+                "args": ["text"]
+            }
+        ]
+    }
+]
