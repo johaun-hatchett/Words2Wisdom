@@ -23,6 +23,8 @@ infile
     optional flag to save intermediary GPT prompts/replies
 ```
 
+In my experiments, the rate of the processing is about 2 seconds per sentence per pipeline step.
+
 ## File structure
 
 ### [`data`](./data/)
@@ -34,6 +36,7 @@ Name | Description | Source
 
 ## References
 
-1. A case study in bootstrapping ontology graphs from textbooks (V. K. Chaudhri et al., 2021)
-2. Seq2KG: an end-to-end neural model for domain agnostic knowledge graph (not text graph) construction from text (M. Stewart & W. Liu, 2020)
-3. Language models are open knowledge graphs (C. Wang et al., 2020)
+1. A case study in bootstrapping ontology graphs from textbooks. (V. K. Chaudhri et al., 2021)
+2. Seq2KG: an end-to-end neural model for domain agnostic knowledge graph (not text graph) construction from text. (M. Stewart & W. Liu, 2020)
+3. Language models are open knowledge graphs. (C. Wang et al., 2020)
+4. ProofWriter: generating implications, proofs, and abductive statements over natural language. (O. Tafjord et al., 2020)

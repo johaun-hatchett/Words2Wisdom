@@ -3,23 +3,61 @@ import os
 from argparse import ArgumentParser
 from datetime import date
 
+import gradio as gr
+import tqdm
 from nltk.tokenize import sent_tokenize
-from tqdm import tqdm
 
 from pipeline import Text2KG
 
 
+COOKBOOK = "./recipes.json"
+
+
 def parse_args():
     parser = ArgumentParser()
-    parser.add_argument("infile", type=str)
+    parser.add_argument("--infile", type=str)
     parser.add_argument("--output", type=str, default="./output")
-    parser.add_argument("--cookbook", type=str, default="./recipes.json",
-                        help="path to cookbook")
-    parser.add_argument("--recipe", type=str, default=None,
+    # parser.add_argument("--cookbook", type=str, default=COOKBOOK,
+    #                     help="path to prompt recipes")
+    parser.add_argument("--recipe", type=str, choices=["Direct", "Traditional", "LogicBased"],
                         help="name of recipe to use"),
-    parser.add_argument("--thoughts", action="store_true")
+    # parser.add_argument("--thoughts", action="store_true",
+    #                     help="whether to save GPT prompt/response chain")
+    parser.add_argument("--demo", action="store_true",
+                        help="execute Gradio app; overrides other arguments")
     
     return parser.parse_args()
+
+
+def text2kg(recipe: str, text: str, progress=gr.Progress()):
+    with open(COOKBOOK) as f:
+        cookbook = json.load(f)
+    
+    for item in cookbook:
+        if item["name"] == recipe:
+            prompts = item
+    
+    pipe = Text2KG(prompts)
+    sentences = sent_tokenize(text.replace("\n", " "))
+
+    triplets = [pipe(s) for s in progress.tqdm(sentences, desc="Processing")]
+    output = [{"sentence": s, "triplets": t} for s, t in zip(sentences, triplets)]
+
+    return output
+
+
+class App:
+    def __init__(self):
+
+        demo = gr.Interface(
+            fn=text2kg,
+            inputs=[
+                gr.Radio(["Direct", "Traditional", "LogicBased"], label="Recipe"),
+                gr.Textbox(lines=2, placeholder="Text Here...", label="Input Text")
+            ],
+            outputs=gr.JSON(label="KG Triplets"),
+        )
+        demo.queue(concurrency_count=10).launch()
 
 
 def save(name, item, args):
@@ -35,33 +73,14 @@ def save(name, item, args):
 
 
 def main(args):
-    with open(args.cookbook) as f:
-        cookbook = json.load(f)
-    
-    recipe = None
-    for item in cookbook:
-        if item["name"] == args.recipe:
-            recipe = item
-    if recipe is None:
-        raise ValueError(f"Recipe '{args.recipe}' does not exist in cookbook.")
-        
-    pipe = Text2KG(recipe)
+    if args.demo:
+        App()
+    else:
+        with open(args.infile) as f:
+            text = f.read()
 
-    with open(args.infile) as f:
-        text = f.read()
-
-    sentences = sent_tokenize(text.replace('\n', ' '))
-    
-    triplets = [pipe(s) for s in tqdm(sentences)]
-
-    output = [{"sentence": s, "triplets": t} for s, t in zip(sentences, triplets)]
-
-    save("triplets", output, args)
-
-    if args.thoughts:
-        save("thoughts", pipe.history, args)
-    
-    return output
+        output = text2kg(recipe=args.recipe, text=text, progress=tqdm)
+        save("triplets", output, args)
 
 
 if __name__ == "__main__":
