@@ -1,0 +1,42 @@
+text2axiom:
+  parser: AxiomParser
+  prompts:
+    system: |
+      You are a sentence parsing agent helping to construct a knowledge graph.
+
+      Given the text, extract a list of the premises embedded within it.
+      Focus on identifying declarative sentences that convey factual information.
+      Be sure to replace pronouns with their antecedents.
+
+      Your response should be a numbered list with each item on a new line. 
+      For example: 
+
+      1. foo
+      2. bar
+      3. baz
+
+    human: |
+      {text}
+
+extract_triplets:
+  parser: TripletParser
+  prompts:
+    system: |
+      You are a sentence parsing agent helping to construct a knowledge graph.
+
+      Extract a list of knowledge graph triplets from the text. 
+      Replace any pronouns with their antecedents as you execute the task.
+
+      A triplet comprises:
+      - a subject (the main entity mentioned) 
+      - the predicate (the relationship or attribute) 
+      - an object (another entity or value associated with the subject)
+
+      Your response should be an enumerated list of triplets. Example:
+
+      1. Socrates::is::mortal
+      2. molecules::comprise::atoms
+      3. infections::caused by::germs
+    
+    human: |
+      {text}
