@@ -1,42 +1,70 @@
+---
+title: AutoKG
+app_file: main.py
+sdk: gradio
+sdk_version: 3.39.0
+---
 # AutoKG
 
 Using large language models (ChatGPT) to automatically construct a knowledge graph from unstructured plain text.
 
 ## Usage
 
-```
-python text2kg.py <infile> [-h] [--output OUTPUT] [--cookbook COOKBOOK] [--recipe RECIPE] [--thoughts]
-```
+### Local Gradio app
 
-**Parameters**
+To locally launch the `Gradio` app from the command line, use
 
 ```
-infile
-    path to input text file (assumed to be in plain text form)
---output
-    directory to save results to (default: ./output)
---cookbook
-    path to JSON file containing GPT prompts (default: ./recipes.json)
---recipe
-    recipe to execute, must be a valid name from cookbook (see above)
---thoughts
-    optional flag to save intermediary GPT prompts/replies
+python main.py
 ```
 
-In my experiments, the rate of the processing is about 2 seconds per sentence per pipeline step.
+### Within a `python` IDE
+
+Import the primary pipeline method using
+
+```python
+>>> from main import create_knowledge_graph
+```
+
+**`create_knowledge_graph` parameters**
+
+```
+api_key (str)
+    OpenAI API key
+ngram_size (int)
+    Number of sentences per forward pass
+axiomatize (bool)
+    Whether to decompose sentences into simpler axioms as a
+    pre-processing step. Doubles the amount of calls to ChatGPT
+text (str)
+    Input text to extract knowledge graph from
+progress
+    Progress bar. The default is Gradio's progress bar; 
+    set `progress = tqdm` for implementations outside of Gradio
+```
+
+### Using Gradio API
+
+Read more [here](https://www.gradio.app/docs/python-client).
 
 ## File structure
 
-### [`data`](./data/)
+```
+chains.py
+    Converts schema.yml items to LangChain chains
 
-Name | Description | Source
---- | --- | ---
-`data/openstax/...` | Sections from various OpenStax textbooks. | 
-`data/Seq2KG/...` | Processed test datasets from Seq2KG paper. ("Processing" = merging tokens back to sentences) | [GitHub](https://github.com/Michael-Stewart-Webdev/Seq2KG/tree/master)
+environment.yml
+    Contains packages required to run environment
 
-## References
+main.py
+    Main pipeline/app code
 
-1. A case study in bootstrapping ontology graphs from textbooks. (V. K. Chaudhri et al., 2021)
-2. Seq2KG: an end-to-end neural model for domain agnostic knowledge graph (not text graph) construction from text. (M. Stewart & W. Liu, 2020)
-3. Language models are open knowledge graphs. (C. Wang et al., 2020)
-4. ProofWriter: generating implications, proofs, and abductive statements over natural language. (O. Tafjord et al., 2020)
+README.md
+    This file
+
+schema.yml
+    Contains definitions of prompts
+
+utils.py
+    Contains helper functions
+```

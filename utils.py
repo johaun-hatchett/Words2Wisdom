@@ -5,6 +5,7 @@ import re
 stop_words = stopwords.words("english")
 
 def process(df: DataFrame):
+    """Text2KG post-processing."""
     drop_list = []
 
     for i, row in df.iterrows():
