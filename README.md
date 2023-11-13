@@ -1,10 +1,11 @@
 ---
-title: AutoKG
+title: Text2KG
 app_file: main.py
 sdk: gradio
 sdk_version: 3.39.0
+pinned: true
 ---
-# AutoKG
+# Text2KG
 
 Using large language models (ChatGPT) to automatically construct a knowledge graph from unstructured plain text.
 
