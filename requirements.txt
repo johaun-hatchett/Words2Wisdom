@@ -1,0 +1,13 @@
+gradio==4.2.0
+langchain==0.0.335
+matplotlib==3.7.1
+networkx==2.8.4
+nltk==3.7
+numpy==1.25.2
+pandas==2.0.3
+PyYAML==6.0
+scikit_learn==1.2.2
+sentence_transformers==2.2.2
+torch==2.0.1
+torch_geometric==2.3.1
+tqdm==4.65.0
