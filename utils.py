@@ -1,6 +1,10 @@
-from pandas import DataFrame
-from nltk.corpus import stopwords
+import nltk
+
+nltk.download("stopwords")
+
 import re
+from nltk.corpus import stopwords
+from pandas import DataFrame
 
 stop_words = stopwords.words("english")
 
