@@ -147,17 +147,18 @@ def create_knowledge_graph(api_key: str, ngram_size: int, axiomatize: bool, text
 class App:
     def __init__(self):
         description = (
-            "Text2KG is a framework that creates knowledge graphs from unstructured text.\n"
-            "The framework uses ChatGPT to fulfill this task.\n"
-            "First, configure the pipeline, then add the text that will be processed."
+            "# Text2KG\n\n"
+            "Text2KG is a framework that automatically creates knowledge graphs from unstructured text.\n\n"
+            "This framework uses ChatGPT to fulfill that task.\n\n"
+            "**Usage:** (1) configure the pipeline; (2) add the text that will be processed"
         )
         demo = gr.Interface(
             fn=create_knowledge_graph,
             description=description,
             inputs=[
                 gr.Textbox(placeholder="API key...", label="OpenAI API Key", type="password"),
-                gr.Slider(minimum=1, maximum=10, step=1, label="Sentence Batching", info="Number of sentences per forward pass? Affects the number of calls made to ChatGPT.", ),
-                gr.Checkbox(label="Axiom Decomposition", info="Decompose sentences into simpler axioms?\n(ex: \"I like cats and dogs.\" = \"I like cats. I like dogs.\")\nDoubles the number of calls to ChatGPT."),
+                gr.Slider(minimum=1, maximum=10, step=1, label="Sentence Batch Size", info="Number of sentences per forward pass? Affects the number of calls made to ChatGPT.", ),
+                gr.Checkbox(label="Axiom Decomposition", info="Decompose sentences into simpler axioms? (ex: \"I like cats and dogs.\" = \"I like cats. I like dogs.\")\n\nDoubles the number of calls to ChatGPT."),
                 gr.Textbox(lines=2, placeholder="Text Here...", label="Input Text"),
             ],
             outputs=[
