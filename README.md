@@ -5,9 +5,9 @@ sdk: gradio
 sdk_version: 3.39.0
 pinned: true
 license: mit
-emoji: 🧞
+emoji: 🧞📖
 colorFrom: indigo
-colorTo: blue
+colorTo: gray
 ---
 # Text2KG
 
