@@ -156,7 +156,7 @@ class App:
             description=description,
             inputs=[
                 gr.Textbox(placeholder="API key...", label="OpenAI API Key", type="password"),
-                gr.Slider(maximum=10, step=1, label="Sentence Batching", info="Number of sentences per forward pass? Affects the number of calls made to ChatGPT.", ),
+                gr.Slider(minimum=1, maximum=10, step=1, label="Sentence Batching", info="Number of sentences per forward pass? Affects the number of calls made to ChatGPT.", ),
                 gr.Checkbox(label="Axiom Decomposition", info="Decompose sentences into simpler axioms?\n(ex: \"I like cats and dogs.\" = \"I like cats. I like dogs.\")\nDoubles the number of calls to ChatGPT."),
                 gr.Textbox(lines=2, placeholder="Text Here...", label="Input Text"),
             ],
@@ -179,9 +179,10 @@ class App:
                                         "organelle. We will shortly come to see that this is significantly "
                                         "different in eukaryotes. Prokaryotic DNA is in the cell's central "
                                         "part: the nucleoid.")]],
-            allow_flagging="never"
+            allow_flagging="never",
+            cache_examples=False
         )
-        demo.queue(concurrency_count=10).launch(share=False)
+        demo.launch(share=False)
 
 
 if __name__ == "__main__":
