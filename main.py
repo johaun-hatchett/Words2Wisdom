@@ -148,8 +148,7 @@ class App:
     def __init__(self):
         description = (
             "# Text2KG\n\n"
-            "Text2KG is a framework that automatically creates knowledge graphs from unstructured text.\n\n"
-            "This framework uses ChatGPT to fulfill that task.\n\n"
+            "Text2KG is a framework that uses ChatGPT to automatically creates knowledge graphs from plain text.\n\n"
             "**Usage:** (1) configure the pipeline; (2) add the text that will be processed"
         )
         demo = gr.Interface(
