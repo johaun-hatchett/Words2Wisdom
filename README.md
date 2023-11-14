@@ -11,13 +11,21 @@ Using large language models (ChatGPT) to automatically construct a knowledge gra
 
 ## Usage
 
-### Local Gradio app
+### Gradio app
 
-To locally launch the `Gradio` app from the command line, use
+#### Remotely
+
+Visit the [Text2KG HuggingFace Space](https://huggingface.co/spaces/jhatchett/Text2KG).
+
+#### Locally
+
+Clone this repository, and then use the command
 
 ```
 python main.py
 ```
+
+in the repository's directory.
 
 ### Within a `python` IDE
 
