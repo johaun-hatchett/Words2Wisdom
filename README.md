@@ -4,6 +4,10 @@ app_file: main.py
 sdk: gradio
 sdk_version: 3.39.0
 pinned: true
+license: mit
+emoji: 🧞
+colorFrom: indigo
+colorTo: blue
 ---
 # Text2KG
 
