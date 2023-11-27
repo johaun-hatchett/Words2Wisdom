@@ -1,18 +1,29 @@
-import json
 import os
+import re
 import secrets
 import string
+import yaml
 from datetime import datetime
 from zipfile import ZipFile
 
 import gradio as gr
+import nltk
 import pandas as pd
+from langchain.embeddings import OpenAIEmbeddings
 from langchain.chains import SimpleSequentialChain
 from langchain.chat_models import ChatOpenAI
 from nltk.tokenize import sent_tokenize
+from pandas import DataFrame
 
 import utils
-from chains import chains
+from chains import llm_chains
+
+
+nltk.download("punkt")
+nltk.download("stopwords")
+
+from nltk.corpus import stopwords
+stop_words = stopwords.words("english")
 
 
 class Text2KG:
@@ -21,6 +32,7 @@ class Text2KG:
     def __init__(self, api_key: str, **kwargs):
 
         self.model = ChatOpenAI(openai_api_key=api_key, **kwargs)
+        self.embedding = OpenAIEmbeddings(openai_api_key=api_key)
 
     
     def init_pipeline(self, *steps: str):
@@ -31,7 +43,7 @@ class Text2KG:
                 the schema.yml file
         """
         self.pipeline = SimpleSequentialChain(
-            chains=[chains[step](llm=self.model) for step in steps],
+            chains=[llm_chains[step](llm=self.model) for step in steps],
             verbose=False
         )
 
@@ -50,21 +62,63 @@ class Text2KG:
         return triplets
 
 
-def create_knowledge_graph(api_key: str, ngram_size: int, axiomatize: bool, text: str, progress=gr.Progress()):
-    """Create knowledge graph from text.
+    def clean(self, kg: DataFrame):
+        """Text2KG post-processing."""
+        drop_list = []
+
+        for i, row in kg.iterrows():
+            # remove stopwords (pronouns)
+            if (row.subject in stop_words) or (row.object in stop_words):
+                drop_list.append(i)
+
+            # remove broken triplets
+            elif row.hasnans:
+                drop_list.append(i)
+            
+            # lowercase nodes/edges, remove articles
+            else:
+                article_pattern = r'^(the|a|an) (.+)'
+                be_pattern = r'^(are|is) (a )?(.+)'
+
+                kg.at[i, "subject"] = re.sub(article_pattern, r'\2', row.subject.lower())
+                kg.at[i, "relation"] = re.sub(be_pattern, r'\3', row.relation.lower())
+                kg.at[i, "object"] = re.sub(article_pattern, r'\2', row.object.lower())
+
+        return kg.drop(drop_list)
+
+
+    def normalize(self, kg: DataFrame, threshold: float=0.3):
+        """Reduce dimensionality of Text2KG output by merging cosine-similar nodes/edges."""
+
+        ents = pd.concat([kg["subject"], kg["object"]]).unique()
+        rels = kg["relation"].unique()
+
+        ent_map = utils.condense_labels(ents, self.embedding.embed_documents, threshold=threshold)
+        rel_map = utils.condense_labels(rels, self.embedding.embed_documents, threshold=threshold)
+
+        kg_normal = pd.DataFrame()
+        
+        kg_normal["subject"] = kg["subject"].map(ent_map)
+        kg_normal["relation"] = kg["relation"].map(rel_map)
+        kg_normal["object"] = kg["object"].map(ent_map)
+
+        return kg_normal
+
+
+def extract_knowledge_graph(api_key: str, batch_size: int, modules: list[str], text: str, progress=gr.Progress()):
+    """Extract knowledge graph from text.
     
     Args:
         api_key (str): OpenAI API key
-        ngram_size (int): Number of sentences per forward pass
-        axiomatize (bool): Whether to decompose sentences into simpler axioms as 
-            a pre-processing step. Doubles the amount of calls to ChatGPT
+        batch_size (int): Number of sentences per forward pass
+        modules (list): Additional modules to add before main extraction step
         text (str): Text from which Text2KG will extract knowledge graph from
         progress: Progress bar. The default is gradio's progress bar; for a 
             command line progress bar, set `progress = tqdm`
 
     Returns:
-        knowledge_graph (DataFrame): The extracted knowledge graph
         zip_path (str): Path to ZIP archive containing outputs
+        knowledge_graph (DataFrame): The extracted knowledge graph
     """
     # init
     if api_key == "":
@@ -72,23 +126,28 @@ def create_knowledge_graph(api_key: str, ngram_size: int, axiomatize: bool, text
     
     model = Text2KG(api_key=api_key, temperature=0.3) # low temp. -> low randomness
 
-    if axiomatize:
-        steps  = ["text2axiom", "extract_triplets"]
-    else:
-        steps = ["extract_triplets"]
+    steps = []
+
+    for module in modules:
+        m = module.lower().replace(' ', '_')
+        steps.append(m)
+
+    if steps[-1] != "triplet_extraction":
+        steps.append("triplet_extraction")
 
     model.init_pipeline(*steps)
 
-    # split text into ngrams
+    # split text into batches
     sentences = sent_tokenize(text)
-    ngrams = [" ".join(sentences[i:i+ngram_size]) 
-              for i in range(0, len(sentences), ngram_size)]
+    batches = [" ".join(sentences[i:i+batch_size])
+               for i in range(0, len(sentences), batch_size)]
     
     # create KG
     knowledge_graph = []
     
-    for i, ngram in progress.tqdm(enumerate(ngrams), desc="Processing...", total=len(ngrams)):
-        output = model.run(ngram)
+    for i, batch in progress.tqdm(list(enumerate(batches)), 
+                                  desc="Processing...", unit="batches"):
+        output = model.run(batch)
         [triplet.update({"sentence_id": i}) for triplet in output]
 
         knowledge_graph.extend(output)
@@ -96,7 +155,7 @@ def create_knowledge_graph(api_key: str, ngram_size: int, axiomatize: bool, text
 
     # convert to df, post-process data
     knowledge_graph = pd.DataFrame(knowledge_graph)
-    knowledge_graph = utils.process(knowledge_graph)
+    knowledge_graph = model.clean(knowledge_graph)
     
     # rearrange columns
     knowledge_graph = knowledge_graph[["sentence_id", "subject", "relation", "object"]]
@@ -104,12 +163,11 @@ def create_knowledge_graph(api_key: str, ngram_size: int, axiomatize: bool, text
     # metadata
     now = datetime.now()
     date = str(now.date())
-    timestamp = now.strftime("%Y%m%d%H%M%S")
 
     metadata = {
-        "timestamp": timestamp,
-        "batch_size": ngram_size,
-        "axiom_decomposition": axiomatize
+        "_timestamp": now,
+        "batch_size": batch_size,
+        "modules": steps
     }
 
     # unique identifier for saving
@@ -121,11 +179,11 @@ def create_knowledge_graph(api_key: str, ngram_size: int, axiomatize: bool, text
 
 
     # save metadata & data
-    with open(os.path.join(save_dir, "metadata.json"), 'w') as f:
-        json.dump(metadata, f)
+    with open(os.path.join(save_dir, "metadata.yml"), 'w') as f:
+        yaml.dump(metadata, f)
     
-    ngrams_df = pd.DataFrame(enumerate(ngrams), columns=["sentence_id", "text"])
-    ngrams_df.to_csv(os.path.join(save_dir, "sentences.txt"), 
+    batches_df = pd.DataFrame(enumerate(batches), columns=["sentence_id", "text"])
+    batches_df.to_csv(os.path.join(save_dir, "sentences.txt"), 
                      index=False)
 
     knowledge_graph.to_csv(os.path.join(save_dir, "kg.txt"), 
@@ -137,37 +195,32 @@ def create_knowledge_graph(api_key: str, ngram_size: int, axiomatize: bool, text
 
     with ZipFile(zip_path, 'w') as zipObj:
 
-        zipObj.write(os.path.join(save_dir, "metadata.json"))
+        zipObj.write(os.path.join(save_dir, "metadata.yml"))
         zipObj.write(os.path.join(save_dir, "sentences.txt"))
         zipObj.write(os.path.join(save_dir, "kg.txt"))
 
-    return knowledge_graph, zip_path
+    return zip_path, knowledge_graph
 
 
 class App:
     def __init__(self):
-        description = (
-            "# Text2KG\n\n"
-            "Text2KG is a framework that uses ChatGPT to automatically creates knowledge graphs from plain text.\n\n"
-            "**Usage:** (1) configure the pipeline; (2) add the text that will be processed"
-        )
         demo = gr.Interface(
-            fn=create_knowledge_graph,
-            description=description,
+            fn=extract_knowledge_graph,
+            title="Text2KG",
             inputs=[
                 gr.Textbox(placeholder="API key...", label="OpenAI API Key", type="password"),
-                gr.Slider(minimum=1, maximum=10, step=1, label="Sentence Batch Size", info="Number of sentences per forward pass? Affects the number of calls made to ChatGPT.", ),
-                gr.Checkbox(label="Axiom Decomposition", info="Decompose sentences into simpler axioms? (ex: \"I like cats and dogs.\" = \"I like cats. I like dogs.\")\n\nDoubles the number of calls to ChatGPT."),
+                gr.Slider(minimum=1, maximum=10, step=1, label="Sentence Batch Size"),
+                gr.CheckboxGroup(choices=["Clause Deconstruction"], label="Optional Modules"),
                 gr.Textbox(lines=2, placeholder="Text Here...", label="Input Text"),
             ],
             outputs=[
-                gr.DataFrame(label="Knowledge Graph Triplets", 
+                gr.File(label="Knowledge Graph"),
+                gr.DataFrame(label="Preview", 
                              headers=["sentence_id", "subject", "relation", "object"], 
                              max_rows=10, 
-                             overflow_row_behaviour="show_ends"),
-                gr.File(label="Knowledge Graph")
+                             overflow_row_behaviour="paginate")
             ],
-            examples=[["", 1, False, ("All cells share four common components: "
+            examples=[[None, 1, [], ("All cells share four common components: "
                                         "1) a plasma membrane, an outer covering that separates the "
                                         "cell's interior from its surrounding environment; 2) cytoplasm, "
                                         "consisting of a jelly-like cytosol within the cell in which "
@@ -182,7 +235,7 @@ class App:
             allow_flagging="never",
             cache_examples=False
         )
-        demo.launch(share=False)
+        demo.queue().launch(share=False)
 
 
 if __name__ == "__main__":
