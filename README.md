@@ -11,7 +11,7 @@ colorTo: gray
 ---
 # Text2KG
 
-Using large language models (ChatGPT) to automatically construct a knowledge graph from unstructured plain text.
+We introduce Text2KG – an intuitive, domain-independent tool that leverages the creative generative ability of GPT-3.5 in the KG construction process. Text2KG automates and accelerates the construction of KGs from unstructured plain text, reducing the need for traditionally-used human labor and computer resources. Our approach incorporates a novel, clause-based text simplification step, reducing the processing of even the most extensive corpora down to the order of minutes. With Text2KG, we aim to streamline the creation of databases from natural language, offering a robust, cost-effective, and user-friendly solution for KG construction.
 
 ## Usage
 
@@ -36,21 +36,24 @@ in the repository's directory.
 Import the primary pipeline method using
 
 ```python
->>> from main import create_knowledge_graph
+>>> from main import extract_knowledge_graph
 ```
 
-**`create_knowledge_graph` parameters**
+**`extract_knowledge_graph` parameters**
 
 ```
 api_key (str)
     OpenAI API key
-ngram_size (int)
+
+batch_size (int)
     Number of sentences per forward pass
-axiomatize (bool)
-    Whether to decompose sentences into simpler axioms as a
-    pre-processing step. Doubles the amount of calls to ChatGPT
+
+modules (list)
+    Additional modules to add before main extraction process (triplet_extraction). Must be a valid name in schema.yml
+
 text (str)
     Input text to extract knowledge graph from
+
 progress
     Progress bar. The default is Gradio's progress bar; 
     set `progress = tqdm` for implementations outside of Gradio
@@ -64,10 +67,10 @@ Read more [here](https://www.gradio.app/docs/python-client).
 
 ```
 chains.py
-    Converts schema.yml items to LangChain chains
+    Converts the items in schema.yml to LangChain modules
 
-environment.yml
-    Contains packages required to run environment
+requirements.txt
+    Contains packages required to run Text2KG
 
 main.py
     Main pipeline/app code
@@ -76,7 +79,7 @@ README.md
     This file
 
 schema.yml
-    Contains definitions of prompts
+    Contains definitions of modules -- prompts + output parsers
 
 utils.py
     Contains helper functions
