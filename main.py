@@ -132,7 +132,7 @@ def extract_knowledge_graph(api_key: str, batch_size: int, modules: list[str], t
         m = module.lower().replace(' ', '_')
         steps.append(m)
 
-    if steps[-1] != "triplet_extraction":
+    if (len(steps) == 0) or (steps[-1] != "triplet_extraction"):
         steps.append("triplet_extraction")
 
     model.init_pipeline(*steps)
