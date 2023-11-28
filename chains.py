@@ -10,7 +10,7 @@ with open("./schema.yml") as f:
     schema = yaml.safe_load(f)
 
 
-class AxiomParser(NumberedListOutputParser):
+class ClauseParser(NumberedListOutputParser):
 
     def parse(self, text: str) -> str:
         axioms = super().parse(text=text)
@@ -34,13 +34,13 @@ class TripletParser(NumberedListOutputParser):
         return super().get_format_instructions()
 
 
-chains = {}
+llm_chains = {}
 
 for scheme in schema:
     parser = schema[scheme]["parser"]
     prompts = schema[scheme]["prompts"]
 
-    chains[scheme] = partial(
+    llm_chains[scheme] = partial(
         LLMChain, 
         output_parser=eval(f'{parser}()'), 
         prompt=ChatPromptTemplate.from_messages(list(prompts.items()))

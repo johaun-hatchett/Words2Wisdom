@@ -1,5 +1,5 @@
-text2axiom:
-  parser: AxiomParser
+clause_deconstruction:
+  parser: ClauseParser
   prompts:
     system: |
       You are a sentence parsing agent helping to construct a knowledge graph.
@@ -18,7 +18,7 @@ text2axiom:
     human: |
       {text}
 
-extract_triplets:
+triplet_extraction:
   parser: TripletParser
   prompts:
     system: |

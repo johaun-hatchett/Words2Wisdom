@@ -1,34 +1,31 @@
-import nltk
+import numpy as np
+from typing import Callable
 
-nltk.download("punkt")
-nltk.download("stopwords")
+from sklearn.cluster import AgglomerativeClustering
 
-import re
-from nltk.corpus import stopwords
-from pandas import DataFrame
 
-stop_words = stopwords.words("english")
+def condense_labels(labels: np.ndarray, embedding_func: Callable, threshold: float=0.5):
+    """Combine cosine-similar labels under same name."""
 
-def process(df: DataFrame):
-    """Text2KG post-processing."""
-    drop_list = []
+    embeddings = np.array(embedding_func(labels))
+    
+    clustering = AgglomerativeClustering(
+        n_clusters=None, 
+        distance_threshold=threshold
+    ).fit(embeddings)
 
-    for i, row in df.iterrows():
-        # remove stopwords (pronouns)
-        if (row.subject in stop_words) or (row.object in stop_words):
-            drop_list.append(i)
-        
-        # remove broken triplets
-        elif row.hasnans:
-            drop_list.append(i)
-        
-        # lowercase nodes/edges, remove articles
-        else:
-            article_pattern = r'^(the|a|an) (.+)'
-            be_pattern = r'^(are|is) (a )?(.+)'
+    clusters = [np.where(clustering.labels_ == l)[0] 
+                for l in range(clustering.n_clusters_)]
 
-            df.at[i, "subject"] = re.sub(article_pattern, r'\2', row.subject.lower())
-            df.at[i, "relation"] = re.sub(be_pattern, r'\3', row.relation.lower())
-            df.at[i, "object"] = re.sub(article_pattern, r'\2', row.object.lower())
+    clusters_reduced = []
+    
+    for c in clusters:
+        embs = embeddings[c]
+        centroid = np.mean(embs)
 
-    return df.drop(drop_list)
+        idx = c[np.argmin(np.linalg.norm(embs - centroid, axis=1))]
+        clusters_reduced.append(idx)
+
+    old2new = {old_id: new_id for old_ids, new_id in zip(clusters, clusters_reduced) for old_id in old_ids}
+    
+    return {labels[i]: labels[j] for i, j in old2new.items()}
