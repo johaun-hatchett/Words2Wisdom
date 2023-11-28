@@ -1,8 +1,8 @@
 gradio==4.2.0
 langchain==0.0.335
-matplotlib==3.7.1
 nltk==3.7
 openai==0.27.4
 pandas==2.0.3
 PyYAML==6.0
+scikit-learn==1.2.2
 tqdm==4.65.0

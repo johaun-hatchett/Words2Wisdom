@@ -3,12 +3,14 @@ import re
 import secrets
 import string
 import yaml
+import yaml
 from datetime import datetime
 from zipfile import ZipFile
 
 import gradio as gr
 import nltk
 import pandas as pd
+from langchain.embeddings import OpenAIEmbeddings
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.chains import SimpleSequentialChain
 from langchain.chat_models import ChatOpenAI
@@ -145,11 +147,22 @@ def extract_knowledge_graph(api_key: str, batch_size: int, modules: list[str], t
 
     if (len(steps) == 0) or (steps[-1] != "triplet_extraction"):
         steps.append("triplet_extraction")
+    steps = []
+
+    for module in modules:
+        m = module.lower().replace(' ', '_')
+        steps.append(m)
+
+    if (len(steps) == 0) or (steps[-1] != "triplet_extraction"):
+        steps.append("triplet_extraction")
 
     pipeline.init(steps)
 
     # split text into batches
+    # split text into batches
     sentences = sent_tokenize(text)
+    batches = [" ".join(sentences[i:i+batch_size])
+               for i in range(0, len(sentences), batch_size)]
     batches = [" ".join(sentences[i:i+batch_size])
                for i in range(0, len(sentences), batch_size)]
     
@@ -176,6 +189,9 @@ def extract_knowledge_graph(api_key: str, batch_size: int, modules: list[str], t
     date = str(now.date())
 
     metadata = {
+        "_timestamp": now,
+        "batch_size": batch_size,
+        "modules": steps
         "_timestamp": now,
         "batch_size": batch_size,
         "modules": steps
