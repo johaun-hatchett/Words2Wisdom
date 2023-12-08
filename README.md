@@ -11,7 +11,12 @@ colorTo: gray
 ---
 # Text2KG
 
-We introduce Text2KG – an intuitive, domain-independent tool that leverages the creative generative ability of GPT-3.5 in the KG construction process. Text2KG automates and accelerates the construction of KGs from unstructured plain text, reducing the need for traditionally-used human labor and computer resources. Our approach incorporates a novel, clause-based text simplification step, reducing the processing of even the most extensive corpora down to the order of minutes. With Text2KG, we aim to streamline the creation of databases from natural language, offering a robust, cost-effective, and user-friendly solution for KG construction.
+We introduce Text2KG – an intuitive, domain-independent tool that leverages the creative generative ability of GPT-3.5 in the KG construction process. 
+Text2KG automates and accelerates the construction of KGs from unstructured plain text, reducing the need for traditionally-used human labor and computer resources. 
+Our approach incorporates a novel, clause-based text simplification step, reducing the processing of even the most extensive corpora down to the order of minutes. 
+With Text2KG, we aim to streamline the creation of databases from natural language, offering a robust, cost-effective, and user-friendly solution for KG construction.
+
+**Note:** Usage requires an OpenAI API key.
 
 ## Usage
 
@@ -49,7 +54,8 @@ batch_size (int)
     Number of sentences per forward pass
 
 modules (list)
-    Additional modules to add before main extraction process (triplet_extraction). Must be a valid name in schema.yml
+    Additional modules to add before main extraction process (triplet_extraction).
+    Must be a valid name in schema.yml (currently, only `clause_decomposition` is supported)
 
 text (str)
     Input text to extract knowledge graph from
