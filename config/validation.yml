@@ -1,0 +1,61 @@
+instruction: >
+  We are in the process of evaluating an AI-extracted knowledge graph. 
+  Your task involves assessing the accuracy and specificity of a component 
+  of the graph known as a triplet, which represents a key idea or fact. A 
+  triplet comprises three components: a subject entity s, a relation r, and 
+  an object entity o (format: [s, r, o]). We emphasize that the order of these 
+  components is significant; the subject s relates to the object o via the 
+  relation r. That is, the relation points from the subject to the object. Our 
+  AI agent extracts a collection of triplets from each passage provided. The 
+  evaluation task has 5 subtasks:
+questions:
+  Q1:
+    title: Specificity (subject entity).
+    text: Does the subject entity represent a specific term/concept referenced in the passage?
+    additional:
+    options: 
+      - 1 = Specific
+      - 0 = Not specific
+  Q2: 
+    title: Specificity (object entity).
+    text: Does the object entity represent a specific term/concept referenced in the passage?
+    additional:
+    options: 
+      - 1 = Specific
+      - 0 = Not specific
+  Q3:
+    title: Relation Validity.
+    text: Does the relation correctly connect the subject entity to the object entity?
+    additional:
+    options:
+      - 1 = Correct
+      - 0 = Incorrect
+  Q4:
+    title: Triplet Relevance.
+    text: Evaluate the importance of the triplet in relation to the passage's meaning.
+    additional: Rate from 0 to 2.
+    options:
+      - 0 = Not relevant to understanding
+      - 1 = Helpful, but not essential to understanding
+      - 2 = Critical fact of passage
+  Q5:
+    title: Triplet Comprehensiveness.
+    text: Assess whether the triplet can function independently from the passage, effectively conveying one of the passage's key ideas.
+    additional: Rate from 0 to 2.
+    options:
+      - 0 = Cannot function without context
+      - 1 = Somewhat dependent on passage
+      - 2 = Comprehensive
+example:
+  passage: >
+    Several cells of one kind that interconnect with each other and perform a shared function form 
+    tissues. These tissues combine to form an organ (your stomach, heart, or brain), and several 
+    organs comprise an organ system (such as the digestive system, circulatory system, or nervous 
+    system).
+  triplet: "['organ', 'such as', 'heart']"
+  answers:
+    Q1: 1 - The entity 'organ' is specific and is mentioned in the passage.
+    Q2: 1 - The entity 'heart' is specific and is mentioned in the passage.
+    Q3: 1 - The relation 'such as' is unclear. A better relation would be 'superclass of'.
+    Q4: 1 - The triplet is relatively important as it is used as a parenthetical example in the passage.
+    Q5: 0 - The provided triplet is unclear as is. "Organ such as heart" doesn't make sense.

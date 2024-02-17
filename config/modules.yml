@@ -1,8 +1,28 @@
 clause_deconstruction:
+  type: preprocess
+  parser: StrOutputParser
+  prompts:
+    system: |
+      You are a sentence parsing agent helping to simplify complex syntax.
+
+      The aim is to split the given text into a meaning-preserving sequence of simpler, shorter sentences.
+      Each of the short sentences should be self-contained, and should not co-reference other sentences.
+      Try to aim for one clause per sentence. Your response should be the split/rephrased text ONLY.
+
+      EXAMPLE: Dogs and cats chase squirrels, but fish do not.
+
+      ACCEPTABLE RESPONSE: Dogs chase squirrels. Cats chase squirrels. Fish do not chase squirrels.
+      UNACCEPTABLE RESPONSE: Dogs and cats chase squirrels. Fish do not chase them.
+
+    human: |
+      {text}
+
+premise_extraction:
+  type: preprocess
   parser: ClauseParser
   prompts:
     system: |
-      You are a sentence parsing agent helping to construct a knowledge graph.
+      You are a sentence parsing agent helping to simplify complex syntax.
 
       Given the text, extract a list of the premises embedded within it.
       Focus on identifying declarative sentences that convey factual information.
@@ -19,6 +39,7 @@ clause_deconstruction:
       {text}
 
 triplet_extraction:
+  type: extraction
   parser: TripletParser
   prompts:
     system: |

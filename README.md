@@ -1,86 +1,82 @@
----
-title: Text2KG
-app_file: main.py
-sdk: gradio
-sdk_version: 3.39.0
-pinned: true
-license: mit
-emoji: 🧞📖
-colorFrom: indigo
-colorTo: gray
----
-# Text2KG
+# Words2Wisdom
 
-We introduce Text2KG – an intuitive, domain-independent tool that leverages the creative generative ability of GPT-3.5 in the KG construction process. Text2KG automates and accelerates the construction of KGs from unstructured plain text, reducing the need for traditionally-used human labor and computer resources. Our approach incorporates a novel, clause-based text simplification step, reducing the processing of even the most extensive corpora down to the order of minutes. With Text2KG, we aim to streamline the creation of databases from natural language, offering a robust, cost-effective, and user-friendly solution for KG construction.
+This is the repository for Words2Wisdom. The work is still a work in progress.
+
+**Paper:** [here](./writeup/words2wisdom_short.pdf) (Accepted as poster to AAAI AI4ED '24 Workshop)
+
+**Hugging Face Space:** [Words2Wisdom](https://huggingface.co/spaces/jhatchett/Words2Wisdom)
+
+**Abstract:**
+Large language models (LLMs) have emerged as powerful tools with vast potential across various domains. While they have the potential to transform the educational landscape with personalized learning experiences, these models face challenges such as high training and usage costs, and susceptibility to inaccuracies. One promising solution to these challenges lies in leveraging knowledge graphs (KGs) for knowledge injection. By integrating factual content into pre-trained LLMs, KGs can reduce the costs associated with domain alignment, mitigate the risk of hallucination, and enhance the interpretability of the models' outputs. To meet the need for efficient knowledge graph creation, we introduce *Words2Wisdom* (W2W), a domain-independent LLM-based tool that automatically generates KGs from plain text. With W2W, we aim to provide a streamlined KG construction option that can drive advancements in grounded LLM-based educational technologies.
+
+## Demonstration
+
+The `demo/demo.ipynb` notebook walks through how to use the `words2wisdom` pipeline.
 
 ## Usage
 
-### Gradio app
+Due to the large number of configurable parameters, `words2wisdom` uses a configuration INI file:
 
-#### Remotely
+```ini
+[pipeline]
+words_per_batch = 150 # any positive integer
+preprocess = clause_deconstruction # {None, clause_deconstruction}
+extraction = triplet_extraction # {triplet_extraction}
 
-Visit the [Text2KG HuggingFace Space](https://huggingface.co/spaces/jhatchett/Text2KG).
-
-#### Locally
-
-Clone this repository, and then use the command
-
+[llm]
+model = gpt-3.5-turbo
+# other GPT params like temperature, etc. can be set here too
 ```
-python main.py
-```
 
-in the repository's directory.
+A template configuration file can be generated with the command-line interface. **Note:** If `openai_api_key` is not explicitly set, the config will automatically try to read from the `OPENAI_API_KEY` environment variable.
 
-### Within a `python` IDE
+### From the CLI
+
+All commands are preceded by `python -m words2wisdom`
+
+| In order to... | Use the command... |
+| -- | -- |
+| Create a new config file | `init > path/to/write/config.ini` |
+| Generate KG from text | `run path/to/text.txt [--config CONFIG] [--output-dir OUTPUT_DIR]` |
+| Evaluate `words2wisdom` outputs | `eval path/to/output.zip` |
+| Use `words2wisdom` from Gradio interface (default config only) | `gui` |
+
+### As a `Python` package
 
 Import the primary pipeline method using
 
 ```python
->>> from main import extract_knowledge_graph
+from words2wisdom.pipeline import Pipeline
+
+# configure pipeline from .ini
+pipe = Pipeline.from_ini("path/to/config.ini")
+text_batches, knowledge_graph = pipe.run("The cat sat on the mat")
 ```
-
-**`extract_knowledge_graph` parameters**
-
-```
-api_key (str)
-    OpenAI API key
-
-batch_size (int)
-    Number of sentences per forward pass
-
-modules (list)
-    Additional modules to add before main extraction process (triplet_extraction). Must be a valid name in schema.yml
-
-text (str)
-    Input text to extract knowledge graph from
-
-progress
-    Progress bar. The default is Gradio's progress bar; 
-    set `progress = tqdm` for implementations outside of Gradio
-```
-
-### Using Gradio API
-
-Read more [here](https://www.gradio.app/docs/python-client).
 
 ## File structure
 
 ```
-chains.py
-    Converts the items in schema.yml to LangChain modules
-
-requirements.txt
-    Contains packages required to run Text2KG
-
-main.py
-    Main pipeline/app code
-
-README.md
-    This file
-
-schema.yml
-    Contains definitions of modules -- prompts + output parsers
-
-utils.py
-    Contains helper functions
+├── config
+│   ├── default_config.ini
+│   ├── modules.yml
+│   └── validation.yml
+├── demo
+│   ├── config.ini
+│   ├── demo.ipynb
+│   └── example.txt
+├── src/words2wisdom
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── cli.py
+│   ├── config.py
+│   ├── gui.py
+│   ├── output_parsers.py
+│   ├── pipeline.py
+│   ├── utils.py
+│   └── validate.py
+├── writeup
+│   └── words2wisdom_short.pdf
+├── LICENSE.md
+├── README.md
+└── requirements.txt
 ```
