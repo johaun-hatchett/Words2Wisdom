@@ -6,19 +6,19 @@ instruction: >
   an object entity o (format: [s, r, o]). We emphasize that the order of these 
   components is significant; the subject s relates to the object o via the 
   relation r. That is, the relation points from the subject to the object. Our 
-  AI agent extracts a collection of triplets from each passage provided. The 
-  evaluation task has 5 subtasks:
+  AI agent extracts a collection of triplets from each passage provided. Please 
+  answer the following questions for each triplet provided.
 questions:
   Q1:
     title: Specificity (subject entity).
-    text: Does the subject entity represent a specific term/concept referenced in the passage?
+    text: Is the subject entity a suitable glossary term for a textbook?
     additional:
     options: 
       - 1 = Specific
       - 0 = Not specific
   Q2: 
     title: Specificity (object entity).
-    text: Does the object entity represent a specific term/concept referenced in the passage?
+    text: Is the object entity a suitable glossary term for a textbook?
     additional:
     options: 
       - 1 = Specific
@@ -54,8 +54,8 @@ example:
     system).
   triplet: "['organ', 'such as', 'heart']"
   answers:
-    Q1: 1 - The entity 'organ' is specific and is mentioned in the passage.
-    Q2: 1 - The entity 'heart' is specific and is mentioned in the passage.
-    Q3: 1 - The relation 'such as' is unclear. A better relation would be 'superclass of'.
+    Q1: 1 - The entity 'organ' is specific and would likely appear in a textbook glossary.
+    Q2: 1 - The entity 'heart' is specific and would likely appear in a textbook glossary.
+    Q3: 0 - The relation 'such as' is unclear. A better relation would be 'superclass of'.
     Q4: 1 - The triplet is relatively important as it is used as a parenthetical example in the passage.
-    Q5: 0 - The provided triplet is unclear as is. "Organ such as heart" doesn't make sense.
+    Q5: 0 - The provided triplet is unclear as is. "Organ such as heart" does not make sense.

@@ -16,21 +16,25 @@ default_config_path = os.path.join(CONFIG_DIR, "default_config.ini")
 def main():
     parser = argparse.ArgumentParser(
         prog="words2wisdom",
-        #description="Generate a knowledge graph from a given text using OpenAI LLMs"
+        description="Knowledge graph generation utilities using OpenAI LLMs"
     )
     subparsers = parser.add_subparsers(dest="command", 
                                        help="Available commands")
 
     # init
     parser_init = subparsers.add_parser("init", 
-                                        help="Return the default config.ini file",
-                                        description="Return the default config.ini file")
+                                        usage="words2wisdom init [> PATH/TO/WRITE/CONFIG.INI]",
+                                        help="Initialize a template config.ini file",
+                                        description="Initialize a template config.ini file. Redirect to a new file using the '>' symbol.")
     parser_init.set_defaults(func=get_default_config)
 
     # gui
     parser_gui = subparsers.add_parser("gui", 
-                                       help="run Words2Wisdom using Gradio interface",
-                                       description="run Words2Wisdom using Gradio interface")
+                                       help="Use Words2Wisdom via Gradio interface",
+                                       description="use Words2Wisdom using Gradio interface")
+    parser_gui.add_argument("-s", "--streamlit",
+                            action="store_true",
+                            help="Use Streamlit GUI instead of Gradio GUI")
     parser_gui.set_defaults(func=gui)
 
     # run
@@ -39,10 +43,11 @@ def main():
                                        description="Generate a knowledge graph from a given text using OpenAI LLMs")
     parser_run.add_argument("text", 
                             help="Path to text file")
-    parser_run.add_argument("--config", 
+    parser_run.add_argument("-c", "--config",
                             help="Path to config.ini file",
                             default=default_config_path)
-    parser_run.add_argument("--output-dir", 
+    parser_run.add_argument("-o", "--output-dir", 
+                            metavar="OUTPUT_PATH",
                             help="Path to save outputs to", 
                             default=OUTPUT_DIR)
     parser_run.set_defaults(func=run)
@@ -68,8 +73,13 @@ def get_default_config(args):
 
 
 def gui(args):
-    """Run Gradio interface"""
-    subprocess.run(["python", "-m", "text2kg.gui"])
+    """Run interface"""
+    if args.streamlit:
+        cmd = "streamlit run words2wisdom/gui_streamlit.py".split()
+    else:
+        cmd = "python -m words2wisdom.gui".split()
+
+    subprocess.run(cmd)
 
 
 def run(args):

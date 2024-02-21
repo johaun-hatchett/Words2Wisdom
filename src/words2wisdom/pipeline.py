@@ -23,7 +23,7 @@ PARSERS = {
 
 
 class Module:
-    """Text2KG module class."""
+    """Words2Wisdom module class."""
     def __init__(self, name: str) -> None:
         self.name = name
         self.parser = self.get_parser()
@@ -44,7 +44,7 @@ class Module:
 
 
 class Pipeline:
-    """Text2KG pipeline class."""
+    """Words2Wisdom pipeline class."""
 
     def __init__(self, config: Config):
         
@@ -57,7 +57,7 @@ class Pipeline:
     
 
     def __repr__(self) -> str:
-        return f"Text2KG(\n\tconfig.pipeline={self.config.pipeline}\n\tconfig.llm={self.config.llm}\n)"
+        return f"Words2Wisdom(\n\tconfig.pipeline={self.config.pipeline}\n\tconfig.llm={self.config.llm}\n)"
     
 
     def __str__(self) -> str:
@@ -72,7 +72,7 @@ class Pipeline:
     
     
     def initialize(self, config: Config):
-        """Initialize Text2KG pipeline from config."""
+        """Initialize Words2Wisdom pipeline from config."""
         
         # validate preprocess
         preprocess_modules = [Module(name) for name in config.pipeline["preprocess"]]
@@ -110,12 +110,12 @@ class Pipeline:
             self.pipeline = {"text": self.pipeline} | chains[i]
         
         # print pipeline
-        print("Initialized Text2KG pipeline:")
+        print("Initialized Words2Wisdom pipeline:")
         print(str(self))
 
     
     def run(self, text: str, clean=True) -> tuple[List[str], pd.DataFrame]:
-        """Run Text2KG pipeline on passed text.
+        """Run Words2Wisdom pipeline on passed text.
         
         Args:
             *texts (str): The text inputs
@@ -126,7 +126,7 @@ class Pipeline:
             knowledge_graph (DataFrame): A dataframe containing the extracted KG triplets, 
                 indexed by batch
         """
-        print("Running Text2KG pipeline:")
+        print("Running Words2Wisdom pipeline:")
         # split text into batches
         text_batches = list(partition_sentences(
             sentences=sent_tokenize(text), 
@@ -150,7 +150,7 @@ class Pipeline:
 
 
     def _clean(self, kg: pd.DataFrame) -> pd.DataFrame:
-        """Text2KG post-processing."""
+        """Words2Wisdom post-processing."""
         print("Cleaning knowledge graph components...", end=' ')
         drop_list = []
 

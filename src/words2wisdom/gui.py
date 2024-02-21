@@ -1,18 +1,21 @@
 import os
+import sys
+
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 import gradio as gr
 
-from . import CONFIG_DIR, ROOT
-from .config import Config
-from .pipeline import Pipeline
-from .utils import dump_all
+from words2wisdom import CONFIG_DIR, ROOT
+from words2wisdom.config import Config
+from words2wisdom.pipeline import Pipeline
+from words2wisdom.utils import dump_all
 
 
-example_file = (os.path.join(ROOT, "demo", "prokaryotes.txt"))
+example_file = (os.path.join(ROOT, "demo", "example.txt"))
 example_text = "The quick brown fox jumps over the lazy dog. The cat sits on the mat."
 
 
-def text2kg_from_string(openai_api_key: str, input_text: str):
+def w2w_from_string(openai_api_key: str, input_text: str):
 
     config = Config.read_ini(os.path.join(CONFIG_DIR, "default_config.ini"))
     config.llm["openai_api_key"] = openai_api_key
@@ -25,15 +28,15 @@ def text2kg_from_string(openai_api_key: str, input_text: str):
     return knowledge_graph, zip_path
 
 
-def text2kg_from_file(openai_api_key: str, input_file):
+def w2w_from_file(openai_api_key: str, input_file):
     with open(input_file.name) as f:
         input_text = f.read()
 
-    return text2kg_from_string(openai_api_key, input_text)
+    return w2w_from_string(openai_api_key, input_text)
 
 
-with gr.Blocks(title="Text2KG") as demo:
-    gr.Markdown("# 🧞📖 Text2KG")
+with gr.Blocks(title="Words2Wisdom") as demo:
+    gr.Markdown("# 🧞📖 Words2Wisdom")
     
     with gr.Column(variant="panel"):
         openai_api_key = gr.Textbox(label="OpenAI API Key", placeholder="sk-...", type="password")
@@ -64,7 +67,7 @@ with gr.Blocks(title="Text2KG") as demo:
             examples=[[None, example_text]],
             inputs=[openai_api_key, text_string],
             outputs=[output_graph, output_zip],
-            fn=text2kg_from_string,
+            fn=w2w_from_string,
             preprocess=False,
             postprocess=False
         )
@@ -74,13 +77,13 @@ with gr.Blocks(title="Text2KG") as demo:
             examples=[[None, example_file]],
             inputs=[openai_api_key, text_file],
             outputs=[output_graph, output_zip],
-            fn=text2kg_from_file,
+            fn=w2w_from_file,
             preprocess=False,
             postprocess=False
         )
 
-    submit_str.click(fn=text2kg_from_string, inputs=[openai_api_key, text_string], outputs=[output_graph, output_zip])
-    submit_file.click(fn=text2kg_from_file, inputs=[openai_api_key, text_file], outputs=[output_graph, output_zip])
+    submit_str.click(fn=w2w_from_string, inputs=[openai_api_key, text_string], outputs=[output_graph, output_zip])
+    submit_file.click(fn=w2w_from_file, inputs=[openai_api_key, text_file], outputs=[output_graph, output_zip])
 
 
 demo.launch(inbrowser=True, width="75%")

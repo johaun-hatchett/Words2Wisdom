@@ -37,7 +37,7 @@ def format_system_prompt():
             + " "
             + (question["additional"] + " " if question["additional"] else "")
             + "("
-            + ";".join(question["options"])
+            + "; ".join(question["options"])
             + ")\n"
         )
         return formatted
